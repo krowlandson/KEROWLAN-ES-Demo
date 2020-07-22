@@ -1,0 +1,46 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Type": "/subscriptions",
+        "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+        "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+        "DisplayName": "KEROWLAN-ES-Management",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": null,
+              "Location": null,
+              "Name": "SecurityCenterBuiltIn",
+              "ResourceId": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+              "ResourceName": "SecurityCenterBuiltIn",
+              "ResourceGroupName": null,
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "SubscriptionId": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+              "Sku": {
+                "name": "A1",
+                "tier": "Standard"
+              },
+              "PolicyAssignmentId": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
+              "Properties": {
+                "Scope": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+                "NotScopes": null,
+                "DisplayName": "ASC Default (subscription: 7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b)",
+                "Description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                "Parameters": {}
+              }
+            }
+          ],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

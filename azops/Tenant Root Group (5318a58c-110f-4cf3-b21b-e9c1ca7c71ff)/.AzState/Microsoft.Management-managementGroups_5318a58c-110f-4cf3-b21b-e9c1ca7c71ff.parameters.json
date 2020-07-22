@@ -1,0 +1,116 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr",
+            "Name": "kr",
+            "DisplayName": "kr",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/kr-decomissioned",
+                "Name": "kr-decomissioned",
+                "DisplayName": "kr-decomissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/kr-sandboxes",
+                "Name": "kr-sandboxes",
+                "DisplayName": "kr-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/kr-platform",
+                "Name": "kr-platform",
+                "DisplayName": "kr-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-identity",
+                    "Name": "kr-identity",
+                    "DisplayName": "kr-identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-management",
+                    "Name": "kr-management",
+                    "DisplayName": "kr-management",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-connectivity",
+                    "Name": "kr-connectivity",
+                    "DisplayName": "kr-connectivity",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/kr-landingzones",
+                "Name": "kr-landingzones",
+                "DisplayName": "kr-Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-online",
+                    "Name": "kr-online",
+                    "DisplayName": "kr-online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-corp",
+                    "Name": "kr-corp",
+                    "DisplayName": "kr-corp",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/kr-sap",
+                    "Name": "kr-sap",
+                    "DisplayName": "kr-sap",
+                    "Children": null
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "DisplayName": "KEROWLAN-ES-Management",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}
