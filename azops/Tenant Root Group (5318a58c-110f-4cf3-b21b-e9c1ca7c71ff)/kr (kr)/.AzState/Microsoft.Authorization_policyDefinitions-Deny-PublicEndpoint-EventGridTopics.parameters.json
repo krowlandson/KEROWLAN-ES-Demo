@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "Deny-PublicEndpoint-EventGridTopics",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-EventGridTopics",
+        "ResourceName": "Deny-PublicEndpoint-EventGridTopics",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "SubscriptionId": null,
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deny-PublicEndpoint-EventGridTopics",
+        "Properties": {
+          "Description": "This policy restricts creation of Event Grid topics with exposed public endpoints",
+          "DisplayName": "Deny-PublicEndpoint-EventGridTopics",
+          "Mode": "All",
+          "Parameters": null,
+          "PolicyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "field": "type",
+                  "equals": "Microsoft.EventGrid/topics"
+                },
+                {
+                  "field": "Microsoft.EventGrid/topics/publicNetworkAccess",
+                  "notequals": "Disabled"
+                }
+              ]
+            },
+            "then": {
+              "effect": "Deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}
