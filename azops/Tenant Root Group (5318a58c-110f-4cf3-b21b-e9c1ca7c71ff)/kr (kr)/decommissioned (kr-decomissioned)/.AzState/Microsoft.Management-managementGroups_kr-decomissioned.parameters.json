@@ -8,7 +8,7 @@
         "Type": "/providers/Microsoft.Management/managementGroups",
         "Name": "kr-decomissioned",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
-        "DisplayName": "kr-decomissioned",
+        "DisplayName": "decommissioned",
         "UpdatedTime": "0001-01-01T00:00:00Z",
         "UpdatedBy": null,
         "ParentId": "/providers/Microsoft.Management/managementGroups/kr",

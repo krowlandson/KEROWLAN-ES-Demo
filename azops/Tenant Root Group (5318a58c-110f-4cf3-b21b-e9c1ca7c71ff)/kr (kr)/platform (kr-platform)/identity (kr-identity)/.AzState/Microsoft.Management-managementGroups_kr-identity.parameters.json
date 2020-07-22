@@ -4,16 +4,16 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/kr-sandboxes",
+        "Id": "/providers/Microsoft.Management/managementGroups/kr-identity",
         "Type": "/providers/Microsoft.Management/managementGroups",
-        "Name": "kr-sandboxes",
+        "Name": "kr-identity",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
-        "DisplayName": "kr-sandboxes",
+        "DisplayName": "identity",
         "UpdatedTime": "0001-01-01T00:00:00Z",
         "UpdatedBy": null,
-        "ParentId": "/providers/Microsoft.Management/managementGroups/kr",
-        "ParentName": "kr",
-        "ParentDisplayName": "kr",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-platform",
+        "ParentName": "kr-platform",
+        "ParentDisplayName": "platform",
         "Children": null,
         "properties": {
           "policyDefinitions": [],
