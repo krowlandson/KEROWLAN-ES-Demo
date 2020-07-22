@@ -47,7 +47,15 @@
                 "Id": "/providers/Microsoft.Management/managementGroups/kr-management",
                 "Name": "kr-management",
                 "DisplayName": "management",
-                "Children": null
+                "Children": [
+                  {
+                    "Type": "/subscriptions",
+                    "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+                    "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+                    "DisplayName": "KEROWLAN-ES-Management",
+                    "Children": null
+                  }
+                ]
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
