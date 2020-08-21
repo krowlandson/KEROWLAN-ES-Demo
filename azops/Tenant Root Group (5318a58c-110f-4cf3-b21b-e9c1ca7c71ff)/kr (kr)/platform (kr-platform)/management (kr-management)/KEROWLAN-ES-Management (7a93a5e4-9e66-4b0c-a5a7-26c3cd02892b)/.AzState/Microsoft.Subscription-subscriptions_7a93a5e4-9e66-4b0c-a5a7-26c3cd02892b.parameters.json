@@ -26,19 +26,17 @@
                 "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
                 "Scope": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
               },
-              "ResourceGroupName": null,
               "ResourceId": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
               "ResourceName": "SecurityCenterBuiltIn",
               "ResourceType": "Microsoft.Authorization/policyAssignments",
               "Sku": {
                 "name": "A1",
                 "tier": "Standard"
-              },
-              "SubscriptionId": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
+              }
             }
           ],
-          "roleDefinitions": null,
-          "roleAssignments": null
+          "roleDefinitions": [],
+          "roleAssignments": []
         }
       }
     }
