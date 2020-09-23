@@ -4,15 +4,15 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/kr-sap",
+        "Id": "/providers/Microsoft.Management/managementGroups/customer-online",
         "Type": "/providers/Microsoft.Management/managementGroups",
-        "Name": "kr-sap",
+        "Name": "customer-online",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
-        "DisplayName": "sap",
+        "DisplayName": "Online",
         "UpdatedTime": "0001-01-01T00:00:00Z",
         "UpdatedBy": null,
-        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-landingzones",
-        "ParentName": "kr-landingzones",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
+        "ParentName": "tf-landing-zones",
         "ParentDisplayName": "Landing Zones",
         "Children": null,
         "properties": {
