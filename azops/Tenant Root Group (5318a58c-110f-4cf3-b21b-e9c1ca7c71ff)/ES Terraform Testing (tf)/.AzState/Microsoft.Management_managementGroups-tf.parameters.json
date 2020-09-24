@@ -11765,7 +11765,314 @@
               "SubscriptionId": null
             }
           ],
-          "policyAssignments": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Allowed-Locations",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-Locations",
+              "Properties": {
+                "Description": "Specifies the allowed locations (regions) where resources can be deployed",
+                "DisplayName": "ES-Allowed-Locations",
+                "NotScopes": null,
+                "Parameters": {
+                  "listOfAllowedLocations": {
+                    "value": [
+                      "uksouth",
+                      "ukwest"
+                    ]
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-Locations",
+              "ResourceName": "ES-Allowed-Locations",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Allowed-RSG-Locations",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-RSG-Locations",
+              "Properties": {
+                "Description": "Specifies the allowed locations (regions) where Resource Groups can be deployed",
+                "DisplayName": "ES-Allowed-RSG-Locations",
+                "NotScopes": null,
+                "Parameters": {
+                  "listOfAllowedLocations": {
+                    "value": [
+                      "uksouth",
+                      "ukwest"
+                    ]
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-RSG-Locations",
+              "ResourceName": "ES-Allowed-RSG-Locations",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deny-AppGW-No-WAF",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-AppGW-No-WAF",
+              "Properties": {
+                "Description": "Deny creation of App Gateway without WAF.",
+                "DisplayName": "ES-Deny-AppGW-No-WAF",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-AppGW-Without-WAF",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-AppGW-No-WAF",
+              "ResourceName": "ES-Deny-AppGW-No-WAF",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deny-RDPFromInternet",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-RDPFromInternet",
+              "Properties": {
+                "Description": "Deny RDP access from the Internet.",
+                "DisplayName": "ES-Deny-RDPFromInternet",
+                "NotScopes": null,
+                "Parameters": {
+                  "effect": {
+                    "value": "Disabled"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e372f825-a257-4fb8-9175-797a8a8627d6",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-RDPFromInternet",
+              "ResourceName": "ES-Deny-RDPFromInternet",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deny-ResourceTypes",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-ResourceTypes",
+              "Properties": {
+                "Description": "Specifies the Resource Types to deny deployment by policy.",
+                "DisplayName": "ES-Deny-ResourceTypes",
+                "NotScopes": null,
+                "Parameters": {
+                  "listOfResourceTypesNotAllowed": {
+                    "value": [
+                      "conexlink.mycloudit/accounts"
+                    ]
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6c112d4e-5bc7-47ae-a041-ea2d9dccd749",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-ResourceTypes",
+              "ResourceName": "ES-Deny-ResourceTypes",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deny-SubnetWithoutNsg",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-SubnetWithoutNsg",
+              "Properties": {
+                "Description": "Deny provisioning of subnet without NSG attached.",
+                "DisplayName": "ES-Deny-SubnetWithoutNsg",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-Subnets-Without-NSG",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-SubnetWithoutNsg",
+              "ResourceName": "ES-Deny-SubnetWithoutNsg",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deny-VMIPForwarding",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-VMIPForwarding",
+              "Properties": {
+                "Description": "Deny IP Forwarding on Virtual Machines.",
+                "DisplayName": "ES-Deny-VMIPForwarding",
+                "NotScopes": null,
+                "Parameters": {
+                  "effect": {
+                    "value": "Disabled"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bd352bd5-2853-4985-bf0d-73806b4a5744",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-VMIPForwarding",
+              "ResourceName": "ES-Deny-VMIPForwarding",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "107c7014-c56f-4195-b660-2d674f48480b",
+                "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deploy-ASC-Monitoring",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Monitoring",
+              "Properties": {
+                "Description": "Enable Monitoring in Azure Security Center.",
+                "DisplayName": "ES-Deploy-ASC-Monitoring",
+                "NotScopes": null,
+                "Parameters": {
+                  "aadAuthenticationInSqlServerMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "diskEncryptionMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "encryptionOfAutomationAccountMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityDesignateLessThanOwnersMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityDesignateMoreThanOneOwnerMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityEnableMFAForWritePermissionsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityRemoveDeprecatedAccountMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityRemoveDeprecatedAccountWithOwnerPermissionsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityRemoveExternalAccountWithOwnerPermissionsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityRemoveExternalAccountWithReadPermissionsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "identityRemoveExternalAccountWithWritePermissionsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "jitNetworkAccessMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "networkSecurityGroupsOnSubnetsMonitoringEffect": {
+                    "value": "AuditIfNotExists"
+                  },
+                  "sqlDbEncryptionMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "sqlManagedInstanceAdvancedDataSecurityEmailAdminsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "sqlManagedInstanceAdvancedDataSecurityEmailsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "sqlServerAdvancedDataSecurityEmailAdminsMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "sqlServerAdvancedDataSecurityMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "systemUpdatesMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "useRbacRulesMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "vmssSystemUpdatesMonitoringEffect": {
+                    "value": "Disabled"
+                  },
+                  "windowsDefenderExploitGuardMonitoringEffect": {
+                    "value": "Disabled"
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Monitoring",
+              "ResourceName": "ES-Deploy-ASC-Monitoring",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            },
+            {
+              "Identity": {
+                "principalId": "5c1859cc-e755-49b9-988e-67e4225add72",
+                "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+                "type": "SystemAssigned"
+              },
+              "Location": "eastus",
+              "Name": "ES-Deploy-ASC-Standard",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+              "Properties": {
+                "Description": "Deploy Azure Security Center Standard Tier.",
+                "DisplayName": "ES-Deploy-ASC-Standard",
+                "NotScopes": null,
+                "Parameters": null,
+                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-ASC-Standard",
+                "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+              "ResourceName": "ES-Deploy-ASC-Standard",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
           "roleDefinitions": [],
           "roleAssignments": []
         }
