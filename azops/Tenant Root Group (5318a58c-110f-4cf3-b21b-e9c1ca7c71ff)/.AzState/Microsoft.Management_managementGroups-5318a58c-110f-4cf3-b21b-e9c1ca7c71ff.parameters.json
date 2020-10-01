@@ -111,22 +111,15 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
-                "Name": "tf-decommissioned",
-                "DisplayName": "Decommissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
                 "Name": "tf-landing-zones",
                 "DisplayName": "Landing Zones",
                 "Children": [
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
-                    "Name": "customer-web-dev",
-                    "DisplayName": "Dev Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-online",
+                    "Name": "customer-online",
+                    "DisplayName": "Online",
                     "Children": null
                   },
                   {
@@ -138,16 +131,16 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-online",
-                    "Name": "customer-online",
-                    "DisplayName": "Online",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                    "Name": "customer-web-prod",
+                    "DisplayName": "Prod Web Applications",
                     "Children": null
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                    "Name": "customer-web-prod",
-                    "DisplayName": "Prod Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+                    "Name": "customer-web-dev",
+                    "DisplayName": "Dev Web Applications",
                     "Children": null
                   },
                   {
@@ -161,22 +154,15 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
-                "Name": "tf-sandboxes",
-                "DisplayName": "Sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
                 "Name": "tf-platform",
                 "DisplayName": "Platform",
                 "Children": [
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
-                    "Name": "tf-management",
-                    "DisplayName": "Management",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                    "Name": "tf-identity",
+                    "DisplayName": "Identity",
                     "Children": null
                   },
                   {
@@ -188,14 +174,35 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
-                    "Name": "tf-identity",
-                    "DisplayName": "Identity",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
+                    "Name": "tf-management",
+                    "DisplayName": "Management",
                     "Children": null
                   }
                 ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
+                "Name": "tf-sandboxes",
+                "DisplayName": "Sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+                "Name": "tf-decommissioned",
+                "DisplayName": "Decommissioned",
+                "Children": null
               }
             ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/self-serv-lz1",
+            "Name": "self-serv-lz1",
+            "DisplayName": "Self Serve LZ1",
+            "Children": null
           }
         ],
         "properties": {
