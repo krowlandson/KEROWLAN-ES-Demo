@@ -24,51 +24,22 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
-            "Name": "tf-platform",
-            "DisplayName": "Platform",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
-                "Name": "tf-connectivity",
-                "DisplayName": "Connectivity",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
-                "Name": "tf-management",
-                "DisplayName": "Management",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
-                "Name": "tf-identity",
-                "DisplayName": "Identity",
-                "Children": null
-              }
-            ]
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
             "Name": "tf-landing-zones",
             "DisplayName": "Landing Zones",
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
-                "Name": "customer-sap",
-                "DisplayName": "SAP",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                "Name": "customer-web-prod",
+                "DisplayName": "Prod Web Applications",
                 "Children": null
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
-                "Name": "customer-web-dev",
-                "DisplayName": "Dev Web Applications",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
+                "Name": "customer-web-test",
+                "DisplayName": "Test Web Applications",
                 "Children": null
               },
               {
@@ -80,9 +51,9 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                "Name": "customer-web-prod",
-                "DisplayName": "Prod Web Applications",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
+                "Name": "customer-sap",
+                "DisplayName": "SAP",
                 "Children": null
               },
               {
@@ -94,9 +65,9 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
-                "Name": "customer-web-test",
-                "DisplayName": "Test Web Applications",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+                "Name": "customer-web-dev",
+                "DisplayName": "Dev Web Applications",
                 "Children": null
               },
               {
@@ -114,6 +85,35 @@
             "Name": "tf-sandboxes",
             "DisplayName": "Sandboxes",
             "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
+            "Name": "tf-platform",
+            "DisplayName": "Platform",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                "Name": "tf-identity",
+                "DisplayName": "Identity",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
+                "Name": "tf-management",
+                "DisplayName": "Management",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                "Name": "tf-connectivity",
+                "DisplayName": "Connectivity",
+                "Children": null
+              }
+            ]
           }
         ],
         "properties": {
@@ -11156,7 +11156,597 @@
               }
             }
           ],
-          "policySetDefinitions": [],
+          "policySetDefinitions": [
+            {
+              "Name": "ES-Deny-Public-Endpoints-for-PaaS-Services",
+              "PolicySetDefinitionId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deny-Public-Endpoints-for-PaaS-Services",
+              "Properties": {
+                "Description": "Deny public endpoints for PaaS services which support PrivateLink (limited support).",
+                "DisplayName": "ES-Deny-Public-Endpoints-for-PaaS-Services",
+                "Parameters": null,
+                "PolicyDefinitionGroups": null,
+                "PolicyDefinitions": [
+                  {
+                    "policyDefinitionReferenceId": "2305471075076999555",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-CosmosDB",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "9147011493650353598",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-MariaDB",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12408670082151357639",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-MySQL",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12661820429455827739",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-PostgreSql",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "4034941732885719677",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-KeyVault",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "3088050605787531398",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-Sql",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "9863399000097702281",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-Storage",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "8251035221074005943",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-Aks",
+                    "parameters": {}
+                  }
+                ]
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deny-Public-Endpoints-for-PaaS-Services",
+              "ResourceName": "ES-Deny-Public-Endpoints-for-PaaS-Services",
+              "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+              "SubscriptionId": null
+            },
+            {
+              "Name": "ES-Deploy-Diagnostics-LogAnalytics",
+              "PolicySetDefinitionId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deploy-Diagnostics-LogAnalytics",
+              "Properties": {
+                "Description": "This initiative configures application Azure resources to forward diagnostic logs and metrics to an Azure Log Analytics workspace.",
+                "DisplayName": "ES-Deploy-Diagnostics-LogAnalytics",
+                "Parameters": {
+                  "logAnalytics": {
+                    "metadata": {
+                      "description": "Select the Log Analytics workspace from dropdown list",
+                      "displayName": "Log Analytics workspace",
+                      "strongType": "omsWorkspace"
+                    },
+                    "type": "String"
+                  }
+                },
+                "PolicyDefinitionGroups": null,
+                "PolicyDefinitions": [
+                  {
+                    "policyDefinitionReferenceId": "7236125568528343678",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-NIC",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12685756144414362153",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-PublicIP",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "2557958870151738256",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-LoadBalancer",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "4538039732467449756",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-NetworkSecurityGroups",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "5161149613138249385",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-KeyVault",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "16623885990575636691",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-CognitiveServices",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "14165180690437289514",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-DLAnalytics",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "13371143819958730506",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-DataLakeStore",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "2071678625413859115",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-EventHub",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "16343927162737995596",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-iotHub",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "11982436241091362267",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-TimeSeriesInsights",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "5158551526259161161",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-LogicAppsWF",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "8137866490937856070",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-RecoveryVault",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12916195990937786417",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-SearchServices",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "9087684938078686846",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-ServiceBus",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "1436434173336656375",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-SQLDBs",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "5057222585536622942",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-SQLElasticPools",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "1432091505729419124",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-APIMgmt",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "18134267480412652992",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-ApplicationGateway",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "8388389559870572478",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-Batch",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "11192323136602097727",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-MySQL",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "7568623331654212445",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-PostgreSQL",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "16237567380538299695",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-AA",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17748756007148882262",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-CDNEndpoints",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17566721830488803368",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-CosmosDB",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "15931864125238299472",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-DataFactory",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12523335183303523469",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-PowerBIEmbedded",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17060547101037299375",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-StreamAnalytics",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "6702667909971191151",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-ExpressRoute",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17715931723533988224",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-ACI",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "524463144292725949",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-ACR",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "10130212469996596913",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-VirtualNetwork",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17249814480476613114",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-VM",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "16803376314801817083",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-VMSS",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "2031506689370542266",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-VNetGW",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "15407192821715569861",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-AKS",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "3565767401079350483",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-LogicAppsISE",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17213255122979381246",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-Website",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "13426869199552741022",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-EventGridTopic",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "105879099833677357",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-EventGridSub",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "9850618825532501923",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-HDInsight",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "5865748922408110407",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-RedisCache",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "3593019545976924523",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-Relay",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "13856581306682461017",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-SignalR",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "12212520351949118745",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-TrafficManager",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "14904583669671807849",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-WebServerFarm",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "8550486177634190353",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-SQLMI",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "2952564532567566124",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-Firewall",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17165387524202107114",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-AnalysisService",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  },
+                  {
+                    "policyDefinitionReferenceId": "17989626042683077847",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Diagnostics-MlWorkspace",
+                    "parameters": {
+                      "logAnalytics": {
+                        "value": "[parameters('logAnalytics')]"
+                      }
+                    }
+                  }
+                ]
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deploy-Diagnostics-LogAnalytics",
+              "ResourceName": "ES-Deploy-Diagnostics-LogAnalytics",
+              "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+              "SubscriptionId": null
+            },
+            {
+              "Name": "ES-Deploy-Sql-Security",
+              "PolicySetDefinitionId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deploy-Sql-Security",
+              "Properties": {
+                "Description": "Recommended built-in security policies for the Enterprise-scale architecture",
+                "DisplayName": "ES-Deploy-Sql-Security",
+                "Parameters": {
+                  "vulnerabilityAssessmentsEmail": {
+                    "metadata": {
+                      "description": "The email address to send alerts",
+                      "displayName": "The email address to send alerts"
+                    },
+                    "type": "String"
+                  },
+                  "vulnerabilityAssessmentsStorageID": {
+                    "metadata": {
+                      "description": "The storage account to store assessments",
+                      "displayName": "The storage account to store assessments"
+                    },
+                    "type": "String"
+                  }
+                },
+                "PolicyDefinitionGroups": null,
+                "PolicyDefinitions": [
+                  {
+                    "policyDefinitionReferenceId": "ES-Deploy-Sql-Tde",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-Tde",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "ES-Deploy-Sql-SecurityAlertPolicies",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-SecurityAlertPolicies",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "ES-Deploy-Sql-AuditingSettings",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-AuditingSettings",
+                    "parameters": {}
+                  },
+                  {
+                    "policyDefinitionReferenceId": "ES-Deploy-Sql-VulnerabilityAssessments",
+                    "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-VulnerabilityAssessments",
+                    "parameters": {
+                      "vulnerabilityAssessmentsEmail": {
+                        "value": "[parameters('vulnerabilityAssessmentsEmail')]"
+                      },
+                      "vulnerabilityAssessmentsStorageID": {
+                        "value": "[parameters('vulnerabilityAssessmentsStorageID')]"
+                      }
+                    }
+                  }
+                ]
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementgroups/tf/providers/Microsoft.Authorization/policySetDefinitions/ES-Deploy-Sql-Security",
+              "ResourceName": "ES-Deploy-Sql-Security",
+              "ResourceType": "Microsoft.Authorization/policySetDefinitions",
+              "SubscriptionId": null
+            }
+          ],
           "policyAssignments": [
             {
               "Identity": {
@@ -11349,7 +11939,7 @@
             },
             {
               "Identity": {
-                "principalId": "94e305a6-ed1a-4b61-a350-9332c1a70175",
+                "principalId": "7aeff816-4a4b-488a-a5f7-2e4b4ea7d154",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
@@ -11441,7 +12031,7 @@
             },
             {
               "Identity": {
-                "principalId": "908c393b-a4f8-477c-bf8f-36d63eaa8c82",
+                "principalId": "6d01088a-87f1-49b5-8259-2157298f8600",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
