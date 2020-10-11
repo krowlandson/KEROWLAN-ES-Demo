@@ -118,51 +118,22 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
-                "Name": "tf-platform",
-                "DisplayName": "Platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
-                    "Name": "tf-connectivity",
-                    "DisplayName": "Connectivity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
-                    "Name": "tf-management",
-                    "DisplayName": "Management",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
-                    "Name": "tf-identity",
-                    "DisplayName": "Identity",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
                 "Name": "tf-landing-zones",
                 "DisplayName": "Landing Zones",
                 "Children": [
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
-                    "Name": "customer-sap",
-                    "DisplayName": "SAP",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                    "Name": "customer-web-prod",
+                    "DisplayName": "Prod Web Applications",
                     "Children": null
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
-                    "Name": "customer-web-dev",
-                    "DisplayName": "Dev Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
+                    "Name": "customer-web-test",
+                    "DisplayName": "Test Web Applications",
                     "Children": null
                   },
                   {
@@ -174,9 +145,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                    "Name": "customer-web-prod",
-                    "DisplayName": "Prod Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
+                    "Name": "customer-sap",
+                    "DisplayName": "SAP",
                     "Children": null
                   },
                   {
@@ -188,9 +159,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
-                    "Name": "customer-web-test",
-                    "DisplayName": "Test Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+                    "Name": "customer-web-dev",
+                    "DisplayName": "Dev Web Applications",
                     "Children": null
                   },
                   {
@@ -208,6 +179,35 @@
                 "Name": "tf-sandboxes",
                 "DisplayName": "Sandboxes",
                 "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
+                "Name": "tf-platform",
+                "DisplayName": "Platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                    "Name": "tf-identity",
+                    "DisplayName": "Identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
+                    "Name": "tf-management",
+                    "DisplayName": "Management",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                    "Name": "tf-connectivity",
+                    "DisplayName": "Connectivity",
+                    "Children": null
+                  }
+                ]
               }
             ]
           }
