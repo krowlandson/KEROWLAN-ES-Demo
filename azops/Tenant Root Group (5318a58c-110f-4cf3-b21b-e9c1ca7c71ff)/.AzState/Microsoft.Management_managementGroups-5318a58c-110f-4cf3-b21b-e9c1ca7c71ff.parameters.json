@@ -111,9 +111,9 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
-                "Name": "tf-decommissioned",
-                "DisplayName": "Decommissioned",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
+                "Name": "tf-sandboxes",
+                "DisplayName": "Sandboxes",
                 "Children": null
               },
               {
@@ -124,16 +124,9 @@
                 "Children": [
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                    "Name": "customer-web-prod",
-                    "DisplayName": "Prod Web Applications",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
-                    "Name": "customer-web-test",
-                    "DisplayName": "Test Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
+                    "Name": "customer-sap",
+                    "DisplayName": "SAP",
                     "Children": null
                   },
                   {
@@ -145,9 +138,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
-                    "Name": "customer-sap",
-                    "DisplayName": "SAP",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
+                    "Name": "customer-web-test",
+                    "DisplayName": "Test Web Applications",
                     "Children": null
                   },
                   {
@@ -166,6 +159,13 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                    "Name": "customer-web-prod",
+                    "DisplayName": "Prod Web Applications",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
                     "Id": "/providers/Microsoft.Management/managementGroups/self-serv-lz1",
                     "Name": "self-serv-lz1",
                     "DisplayName": "Self Serve LZ1",
@@ -175,9 +175,9 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
-                "Name": "tf-sandboxes",
-                "DisplayName": "Sandboxes",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+                "Name": "tf-decommissioned",
+                "DisplayName": "Decommissioned",
                 "Children": null
               },
               {
@@ -188,9 +188,9 @@
                 "Children": [
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
-                    "Name": "tf-identity",
-                    "DisplayName": "Identity",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                    "Name": "tf-connectivity",
+                    "DisplayName": "Connectivity",
                     "Children": null
                   },
                   {
@@ -202,9 +202,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
-                    "Name": "tf-connectivity",
-                    "DisplayName": "Connectivity",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                    "Name": "tf-identity",
+                    "DisplayName": "Identity",
                     "Children": null
                   }
                 ]
