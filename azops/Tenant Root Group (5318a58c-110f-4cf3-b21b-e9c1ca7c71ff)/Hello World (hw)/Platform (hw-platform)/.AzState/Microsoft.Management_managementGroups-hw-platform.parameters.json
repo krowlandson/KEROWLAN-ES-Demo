@@ -1,0 +1,58 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/hw-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "hw-platform",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Platform",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/hw",
+        "ParentName": "hw",
+        "ParentDisplayName": "Hello World",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-identity",
+            "Name": "hw-identity",
+            "DisplayName": "Identity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-management",
+            "Name": "hw-management",
+            "DisplayName": "Management",
+            "Children": [
+              {
+                "Type": "/subscriptions",
+                "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+                "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+                "DisplayName": "KEROWLAN-ES-Management",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-connectivity",
+            "Name": "hw-connectivity",
+            "DisplayName": "Connectivity",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
