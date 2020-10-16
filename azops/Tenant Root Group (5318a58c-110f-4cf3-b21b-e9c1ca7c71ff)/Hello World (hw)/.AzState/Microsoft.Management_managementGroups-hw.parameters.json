@@ -17,56 +17,6 @@
         "Children": [
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/hw-landing-zones",
-            "Name": "hw-landing-zones",
-            "DisplayName": "Landing Zones",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-sap",
-                "Name": "hw-demo-sap",
-                "DisplayName": "SAP",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-corp",
-                "Name": "hw-demo-corp",
-                "DisplayName": "Corp",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-online",
-                "Name": "hw-demo-online",
-                "DisplayName": "Online",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/custom-apps",
-                "Name": "custom-apps",
-                "DisplayName": "Custom App Profile",
-                "Children": null
-              }
-            ]
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/hw-decommissioned",
-            "Name": "hw-decommissioned",
-            "DisplayName": "Decommissioned",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/hw-sandboxes",
-            "Name": "hw-sandboxes",
-            "DisplayName": "Sandboxes",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/hw-platform",
             "Name": "hw-platform",
             "DisplayName": "Platform",
@@ -101,6 +51,49 @@
                 "Children": null
               }
             ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-landing-zones",
+            "Name": "hw-landing-zones",
+            "DisplayName": "Landing Zones",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-corp",
+                "Name": "hw-demo-corp",
+                "DisplayName": "Corp",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-online",
+                "Name": "hw-demo-online",
+                "DisplayName": "Online",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-sap",
+                "Name": "hw-demo-sap",
+                "DisplayName": "SAP",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-sandboxes",
+            "Name": "hw-sandboxes",
+            "DisplayName": "Sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/hw-decommissioned",
+            "Name": "hw-decommissioned",
+            "DisplayName": "Decommissioned",
+            "Children": null
           }
         ],
         "properties": {
@@ -11926,7 +11919,7 @@
             },
             {
               "Identity": {
-                "principalId": "78b32900-66b6-4e84-b48d-80bb9aa2e8c3",
+                "principalId": "a8d95764-7cc7-4fa4-9bc6-0bd1cbdcc17d",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
@@ -12018,7 +12011,7 @@
             },
             {
               "Identity": {
-                "principalId": "696a20b3-cb4d-4990-bdfe-46e705cf42ca",
+                "principalId": "48c5f541-4664-4e08-bdf0-5ef88523079f",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
