@@ -103,9 +103,38 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
-                "Name": "tf-sandboxes",
-                "DisplayName": "Sandboxes",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
+                "Name": "tf-platform",
+                "DisplayName": "Platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                    "Name": "tf-connectivity",
+                    "DisplayName": "Connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                    "Name": "tf-identity",
+                    "DisplayName": "Identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
+                    "Name": "tf-management",
+                    "DisplayName": "Management",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+                "Name": "tf-decommissioned",
+                "DisplayName": "Decommissioned",
                 "Children": null
               },
               {
@@ -130,9 +159,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
-                    "Name": "customer-web-test",
-                    "DisplayName": "Test Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                    "Name": "customer-web-prod",
+                    "DisplayName": "Prod Web Applications",
                     "Children": null
                   },
                   {
@@ -151,9 +180,9 @@
                   },
                   {
                     "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                    "Name": "customer-web-prod",
-                    "DisplayName": "Prod Web Applications",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
+                    "Name": "customer-web-test",
+                    "DisplayName": "Test Web Applications",
                     "Children": null
                   },
                   {
@@ -167,39 +196,10 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
-                "Name": "tf-decommissioned",
-                "DisplayName": "Decommissioned",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
+                "Name": "tf-sandboxes",
+                "DisplayName": "Sandboxes",
                 "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
-                "Name": "tf-platform",
-                "DisplayName": "Platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
-                    "Name": "tf-connectivity",
-                    "DisplayName": "Connectivity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
-                    "Name": "tf-management",
-                    "DisplayName": "Management",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
-                    "Name": "tf-identity",
-                    "DisplayName": "Identity",
-                    "Children": null
-                  }
-                ]
               }
             ]
           },
@@ -209,56 +209,6 @@
             "Name": "hw",
             "DisplayName": "Hello World",
             "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-landing-zones",
-                "Name": "hw-landing-zones",
-                "DisplayName": "Landing Zones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-sap",
-                    "Name": "hw-demo-sap",
-                    "DisplayName": "SAP",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-corp",
-                    "Name": "hw-demo-corp",
-                    "DisplayName": "Corp",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-online",
-                    "Name": "hw-demo-online",
-                    "DisplayName": "Online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/custom-apps",
-                    "Name": "custom-apps",
-                    "DisplayName": "Custom App Profile",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-decommissioned",
-                "Name": "hw-decommissioned",
-                "DisplayName": "Decommissioned",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-sandboxes",
-                "Name": "hw-sandboxes",
-                "DisplayName": "Sandboxes",
-                "Children": null
-              },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/hw-platform",
@@ -295,6 +245,49 @@
                     "Children": null
                   }
                 ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-landing-zones",
+                "Name": "hw-landing-zones",
+                "DisplayName": "Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-corp",
+                    "Name": "hw-demo-corp",
+                    "DisplayName": "Corp",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-online",
+                    "Name": "hw-demo-online",
+                    "DisplayName": "Online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-sap",
+                    "Name": "hw-demo-sap",
+                    "DisplayName": "SAP",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-sandboxes",
+                "Name": "hw-sandboxes",
+                "DisplayName": "Sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/hw-decommissioned",
+                "Name": "hw-decommissioned",
+                "DisplayName": "Decommissioned",
+                "Children": null
               }
             ]
           }
