@@ -204,92 +204,11 @@
             ]
           },
           {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/hw",
-            "Name": "hw",
-            "DisplayName": "Hello World",
-            "Children": [
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-platform",
-                "Name": "hw-platform",
-                "DisplayName": "Platform",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-identity",
-                    "Name": "hw-identity",
-                    "DisplayName": "Identity",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-management",
-                    "Name": "hw-management",
-                    "DisplayName": "Management",
-                    "Children": [
-                      {
-                        "Type": "/subscriptions",
-                        "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
-                        "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
-                        "DisplayName": "KEROWLAN-ES-Management",
-                        "Children": null
-                      }
-                    ]
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-connectivity",
-                    "Name": "hw-connectivity",
-                    "DisplayName": "Connectivity",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-landing-zones",
-                "Name": "hw-landing-zones",
-                "DisplayName": "Landing Zones",
-                "Children": [
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-corp",
-                    "Name": "hw-demo-corp",
-                    "DisplayName": "Corp",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-online",
-                    "Name": "hw-demo-online",
-                    "DisplayName": "Online",
-                    "Children": null
-                  },
-                  {
-                    "Type": "/providers/Microsoft.Management/managementGroups",
-                    "Id": "/providers/Microsoft.Management/managementGroups/hw-demo-sap",
-                    "Name": "hw-demo-sap",
-                    "DisplayName": "SAP",
-                    "Children": null
-                  }
-                ]
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-sandboxes",
-                "Name": "hw-sandboxes",
-                "DisplayName": "Sandboxes",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/hw-decommissioned",
-                "Name": "hw-decommissioned",
-                "DisplayName": "Decommissioned",
-                "Children": null
-              }
-            ]
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "DisplayName": "KEROWLAN-ES-Management",
+            "Children": null
           }
         ],
         "properties": {
