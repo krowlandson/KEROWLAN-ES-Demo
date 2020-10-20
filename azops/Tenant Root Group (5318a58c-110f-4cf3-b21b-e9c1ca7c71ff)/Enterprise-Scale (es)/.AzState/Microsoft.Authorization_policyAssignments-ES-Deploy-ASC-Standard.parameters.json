@@ -5,22 +5,22 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "e210f012-3aae-450b-bb66-50bd955ef764",
+          "principalId": "ec6675b1-5e2f-4a7a-b919-4e6cf33d1a19",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
         "Location": "eastus",
         "Name": "ES-Deploy-ASC-Standard",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
         "Properties": {
           "Description": "Deploy Azure Security Center Standard Tier.",
           "DisplayName": "ES-Deploy-ASC-Standard",
           "NotScopes": null,
           "Parameters": null,
-          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-ASC-Standard",
-          "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-ASC-Standard",
+          "Scope": "/providers/Microsoft.Management/managementGroups/es"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
         "ResourceName": "ES-Deploy-ASC-Standard",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
