@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "ES-Deny-PublicEndpoint-Storage",
+        "ResourceId": "/providers/Microsoft.Management/managementgroups/es/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-Storage",
+        "ResourceName": "ES-Deny-PublicEndpoint-Storage",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "SubscriptionId": null,
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementgroups/es/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-Storage",
+        "Properties": {
+          "Description": "This policy restrict creation of storage accounts with IP Firewall exposed to all public endpoints",
+          "DisplayName": "ES-Deny-PublicEndpoint-Storage",
+          "Mode": "All",
+          "Parameters": null,
+          "PolicyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "equals": "Microsoft.Storage/storageAccounts",
+                  "field": "type"
+                },
+                {
+                  "field": "Microsoft.Storage/storageAccounts/networkAcls.defaultAction",
+                  "notequals": "Deny"
+                }
+              ]
+            },
+            "then": {
+              "effect": "Deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}
