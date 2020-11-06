@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "46695a10-9e9f-49af-b7ce-6f3045abc5ec",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "ES-Deploy-ASC-Standard",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+        "Properties": {
+          "Description": "Deploy Azure Security Center Standard Tier.",
+          "DisplayName": "ES-Deploy-ASC-Standard",
+          "NotScopes": null,
+          "Parameters": null,
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-ASC-Standard",
+          "Scope": "/providers/Microsoft.Management/managementGroups/demo"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Standard",
+        "ResourceName": "ES-Deploy-ASC-Standard",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

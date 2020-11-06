@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Name": "ES-Deny-PublicEndpoint-CosmosDB",
+        "ResourceId": "/providers/Microsoft.Management/managementgroups/demo/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-CosmosDB",
+        "ResourceName": "ES-Deny-PublicEndpoint-CosmosDB",
+        "ResourceType": "Microsoft.Authorization/policyDefinitions",
+        "SubscriptionId": null,
+        "PolicyDefinitionId": "/providers/Microsoft.Management/managementgroups/demo/providers/Microsoft.Authorization/policyDefinitions/ES-Deny-PublicEndpoint-CosmosDB",
+        "Properties": {
+          "Description": "This policy restrict creation of cosmos db accounts with exposed public endpoints",
+          "DisplayName": "ES-Deny-PublicEndpoint-CosmosDB",
+          "Mode": "All",
+          "Parameters": null,
+          "PolicyRule": {
+            "if": {
+              "allOf": [
+                {
+                  "equals": "Microsoft.DocumentDB/databaseAccounts",
+                  "field": "type"
+                },
+                {
+                  "field": "Microsoft.DocumentDB/databaseAccounts/publicNetworkAccess",
+                  "notequals": "Disabled"
+                }
+              ]
+            },
+            "then": {
+              "effect": "Deny"
+            }
+          }
+        }
+      }
+    }
+  }
+}
