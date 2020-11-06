@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "None"
+        },
+        "Location": "eastus",
+        "Name": "ES-Deny-ResourceTypes",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Deny-ResourceTypes",
+        "Properties": {
+          "Description": "Specifies the Resource Types to deny deployment by policy.",
+          "DisplayName": "ES-Deny-ResourceTypes",
+          "NotScopes": null,
+          "Parameters": {
+            "listOfResourceTypesNotAllowed": {
+              "value": [
+                "conexlink.mycloudit/accounts"
+              ]
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/6c112d4e-5bc7-47ae-a041-ea2d9dccd749",
+          "Scope": "/providers/Microsoft.Management/managementGroups/demo"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Deny-ResourceTypes",
+        "ResourceName": "ES-Deny-ResourceTypes",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

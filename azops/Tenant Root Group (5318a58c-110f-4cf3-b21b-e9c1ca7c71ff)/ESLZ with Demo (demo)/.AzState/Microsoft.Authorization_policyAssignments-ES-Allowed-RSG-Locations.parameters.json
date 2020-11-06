@@ -1,0 +1,38 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "None"
+        },
+        "Location": "eastus",
+        "Name": "ES-Allowed-RSG-Locations",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-RSG-Locations",
+        "Properties": {
+          "Description": "Specifies the allowed locations (regions) where Resource Groups can be deployed",
+          "DisplayName": "ES-Allowed-RSG-Locations",
+          "NotScopes": null,
+          "Parameters": {
+            "listOfAllowedLocations": {
+              "value": [
+                "uksouth",
+                "ukwest"
+              ]
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
+          "Scope": "/providers/Microsoft.Management/managementGroups/demo"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-RSG-Locations",
+        "ResourceName": "ES-Allowed-RSG-Locations",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

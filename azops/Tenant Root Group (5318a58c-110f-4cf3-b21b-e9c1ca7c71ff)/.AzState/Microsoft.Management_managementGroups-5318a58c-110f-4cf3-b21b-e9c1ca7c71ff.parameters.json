@@ -96,6 +96,252 @@
             ]
           },
           {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf",
+            "Name": "tf",
+            "DisplayName": "ES Terraform Testing",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
+                "Name": "tf-sandboxes",
+                "DisplayName": "Sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
+                "Name": "tf-platform",
+                "DisplayName": "Platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-identity",
+                    "Name": "tf-identity",
+                    "DisplayName": "Identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                    "Name": "tf-connectivity",
+                    "DisplayName": "Connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
+                    "Name": "tf-management",
+                    "DisplayName": "Management",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
+                "Name": "tf-landing-zones",
+                "DisplayName": "Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
+                    "Name": "customer-sap",
+                    "DisplayName": "SAP",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-corp",
+                    "Name": "customer-corp",
+                    "DisplayName": "Corp Custom",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-online",
+                    "Name": "customer-online",
+                    "DisplayName": "Online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                    "Name": "customer-web-prod",
+                    "DisplayName": "Prod Web Applications",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
+                    "Name": "customer-web-test",
+                    "DisplayName": "Test Web Applications",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+                    "Name": "customer-web-dev",
+                    "DisplayName": "Dev Web Applications",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/self-serv-lz1",
+                    "Name": "self-serv-lz1",
+                    "DisplayName": "Self Serve LZ1",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+                "Name": "tf-decommissioned",
+                "DisplayName": "Decommissioned",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/es",
+            "Name": "es",
+            "DisplayName": "Enterprise-Scale",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-landing-zones",
+                "Name": "es-landing-zones",
+                "DisplayName": "Landing Zones",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-decommissioned",
+                "Name": "es-decommissioned",
+                "DisplayName": "Decommissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-platform",
+                "Name": "es-platform",
+                "DisplayName": "Platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-identity",
+                    "Name": "es-identity",
+                    "DisplayName": "Identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-connectivity",
+                    "Name": "es-connectivity",
+                    "DisplayName": "Connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/es-management",
+                    "Name": "es-management",
+                    "DisplayName": "Management",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-sandboxes",
+                "Name": "es-sandboxes",
+                "DisplayName": "Sandboxes",
+                "Children": null
+              }
+            ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo",
+            "Name": "demo",
+            "DisplayName": "ESLZ with Demo",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-platform",
+                "Name": "demo-platform",
+                "DisplayName": "Platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-management",
+                    "Name": "demo-management",
+                    "DisplayName": "Management",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-identity",
+                    "Name": "demo-identity",
+                    "DisplayName": "Identity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-connectivity",
+                    "Name": "demo-connectivity",
+                    "DisplayName": "Connectivity",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-sandboxes",
+                "Name": "demo-sandboxes",
+                "DisplayName": "Sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-landing-zones",
+                "Name": "demo-landing-zones",
+                "DisplayName": "Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
+                    "Name": "demo-demo-corp",
+                    "DisplayName": "Corp",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
+                    "Name": "demo-demo-online",
+                    "DisplayName": "Online",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-sap",
+                    "Name": "demo-demo-sap",
+                    "DisplayName": "SAP",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-decommissioned",
+                "Name": "demo-decommissioned",
+                "DisplayName": "Decommissioned",
+                "Children": null
+              }
+            ]
+          },
+          {
             "Type": "/subscriptions",
             "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
             "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
