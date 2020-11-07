@@ -17,16 +17,16 @@
         "Children": [
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
-            "Name": "demo-demo-corp",
-            "DisplayName": "Corp",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
+            "Name": "demo-demo-online",
+            "DisplayName": "Online",
             "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
-            "Name": "demo-demo-online",
-            "DisplayName": "Online",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
+            "Name": "demo-demo-corp",
+            "DisplayName": "Corp",
             "Children": null
           },
           {

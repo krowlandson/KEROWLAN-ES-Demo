@@ -24,6 +24,13 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/es-sandboxes",
+            "Name": "es-sandboxes",
+            "DisplayName": "Sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/es-decommissioned",
             "Name": "es-decommissioned",
             "DisplayName": "Decommissioned",
@@ -37,16 +44,16 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/es-identity",
-                "Name": "es-identity",
-                "DisplayName": "Identity",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-connectivity",
+                "Name": "es-connectivity",
+                "DisplayName": "Connectivity",
                 "Children": null
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/es-connectivity",
-                "Name": "es-connectivity",
-                "DisplayName": "Connectivity",
+                "Id": "/providers/Microsoft.Management/managementGroups/es-identity",
+                "Name": "es-identity",
+                "DisplayName": "Identity",
                 "Children": null
               },
               {
@@ -57,13 +64,6 @@
                 "Children": null
               }
             ]
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/es-sandboxes",
-            "Name": "es-sandboxes",
-            "DisplayName": "Sandboxes",
-            "Children": null
           }
         ],
         "properties": {
@@ -11889,7 +11889,7 @@
             },
             {
               "Identity": {
-                "principalId": "651c7bd7-8507-4ba2-aca2-75a44aa5c399",
+                "principalId": "022c2d20-2bfc-4de7-bc62-e96d3436b2f3",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
@@ -11968,7 +11968,7 @@
                     "value": "Disabled"
                   }
                 },
-                "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
                 "Scope": "/providers/Microsoft.Management/managementGroups/es"
               },
               "ResourceId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Monitoring",
@@ -11981,7 +11981,7 @@
             },
             {
               "Identity": {
-                "principalId": "96989b4c-25c0-488e-b3ec-8edddfef9c10",
+                "principalId": "2e87add8-54df-4e3c-9e8b-d479af893048",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },

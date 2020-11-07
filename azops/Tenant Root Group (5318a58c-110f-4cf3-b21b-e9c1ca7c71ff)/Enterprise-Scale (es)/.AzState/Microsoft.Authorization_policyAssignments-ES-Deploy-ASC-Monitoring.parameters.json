@@ -5,7 +5,7 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "651c7bd7-8507-4ba2-aca2-75a44aa5c399",
+          "principalId": "022c2d20-2bfc-4de7-bc62-e96d3436b2f3",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
@@ -84,7 +84,7 @@
               "value": "Disabled"
             }
           },
-          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
           "Scope": "/providers/Microsoft.Management/managementGroups/es"
         },
         "ResourceId": "/providers/Microsoft.Management/managementGroups/es/providers/Microsoft.Authorization/policyAssignments/ES-Deploy-ASC-Monitoring",

@@ -17,6 +17,13 @@
         "Children": [
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-sandboxes",
+            "Name": "demo-sandboxes",
+            "DisplayName": "Sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/demo-platform",
             "Name": "demo-platform",
             "DisplayName": "Platform",
@@ -30,26 +37,19 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/demo-identity",
-                "Name": "demo-identity",
-                "DisplayName": "Identity",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/demo-connectivity",
                 "Name": "demo-connectivity",
                 "DisplayName": "Connectivity",
                 "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-identity",
+                "Name": "demo-identity",
+                "DisplayName": "Identity",
+                "Children": null
               }
             ]
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo-sandboxes",
-            "Name": "demo-sandboxes",
-            "DisplayName": "Sandboxes",
-            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
@@ -59,16 +59,16 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
-                "Name": "demo-demo-corp",
-                "DisplayName": "Corp",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
+                "Name": "demo-demo-online",
+                "DisplayName": "Online",
                 "Children": null
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
-                "Name": "demo-demo-online",
-                "DisplayName": "Online",
+                "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
+                "Name": "demo-demo-corp",
+                "DisplayName": "Corp",
                 "Children": null
               },
               {
@@ -11911,7 +11911,7 @@
             },
             {
               "Identity": {
-                "principalId": "7800172f-c0ae-4bf3-828c-1887539e71db",
+                "principalId": "c0156164-ce9b-4776-aebb-bec81c3fcb32",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
@@ -12003,7 +12003,7 @@
             },
             {
               "Identity": {
-                "principalId": "46695a10-9e9f-49af-b7ce-6f3045abc5ec",
+                "principalId": "a0c2fdfe-1a6f-43ae-8486-b0baffd1c0e4",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
