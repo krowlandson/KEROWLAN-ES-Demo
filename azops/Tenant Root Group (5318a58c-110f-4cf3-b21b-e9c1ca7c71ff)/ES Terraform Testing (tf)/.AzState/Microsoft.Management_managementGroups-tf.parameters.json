@@ -37,19 +37,26 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
-                "Name": "tf-connectivity",
-                "DisplayName": "Connectivity",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/tf-management",
                 "Name": "tf-management",
                 "DisplayName": "Management",
                 "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/tf-connectivity",
+                "Name": "tf-connectivity",
+                "DisplayName": "Connectivity",
+                "Children": null
               }
             ]
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+            "Name": "tf-decommissioned",
+            "DisplayName": "Decommissioned",
+            "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
@@ -59,16 +66,9 @@
             "Children": [
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
-                "Name": "customer-sap",
-                "DisplayName": "SAP",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-corp",
-                "Name": "customer-corp",
-                "DisplayName": "Corp Custom",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+                "Name": "customer-web-dev",
+                "DisplayName": "Dev Web Applications",
                 "Children": null
               },
               {
@@ -80,13 +80,6 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
-                "Name": "customer-web-prod",
-                "DisplayName": "Prod Web Applications",
-                "Children": null
-              },
-              {
-                "Type": "/providers/Microsoft.Management/managementGroups",
                 "Id": "/providers/Microsoft.Management/managementGroups/customer-web-test",
                 "Name": "customer-web-test",
                 "DisplayName": "Test Web Applications",
@@ -94,9 +87,23 @@
               },
               {
                 "Type": "/providers/Microsoft.Management/managementGroups",
-                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
-                "Name": "customer-web-dev",
-                "DisplayName": "Dev Web Applications",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-corp",
+                "Name": "customer-corp",
+                "DisplayName": "Corp Custom",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-web-prod",
+                "Name": "customer-web-prod",
+                "DisplayName": "Prod Web Applications",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/customer-sap",
+                "Name": "customer-sap",
+                "DisplayName": "SAP",
                 "Children": null
               },
               {
@@ -107,13 +114,6 @@
                 "Children": null
               }
             ]
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
-            "Name": "tf-decommissioned",
-            "DisplayName": "Decommissioned",
-            "Children": null
           }
         ],
         "properties": {
@@ -11939,7 +11939,7 @@
             },
             {
               "Identity": {
-                "principalId": "d139f0cd-74b4-422c-805c-07f4008ce0f4",
+                "principalId": "dfe665e9-49b6-4acb-8860-e91d10857c93",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
@@ -12031,7 +12031,7 @@
             },
             {
               "Identity": {
-                "principalId": "4d903ef0-d233-4a4d-968d-a00900a6dfdf",
+                "principalId": "646166bd-6add-4951-bfbc-8ec2bbeeefc7",
                 "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
                 "type": "SystemAssigned"
               },
