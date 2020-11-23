@@ -11,10 +11,23 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-AzureBackup-on-VM",
         "Properties": {
-          "Description": null,
-          "DisplayName": "Deploy-AzureBackup-on-VMs",
+          "Description": "Deploys if not exist a backup vault in the resourcegroup of  the virtual machine and enabled the backup for the virtual machine with defaultPolicy enabled.",
+          "DisplayName": "Deploy Azure Backup on virtual machines",
           "Mode": "All",
-          "Parameters": {},
+          "Parameters": {
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
+            }
+          },
           "PolicyRule": {
             "if": {
               "allOf": [
@@ -347,12 +360,12 @@
               ]
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
                 "resourceGroupName": "[resourceGroup().name]",
                 "type": "Microsoft.RecoveryServices/backupprotecteditems",
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                  "/providers/Microsoft.Authorization/roleDefinitions/f9980e02c-c2be-4d73-94e8-173b1dc7cf3c"
                 ],
                 "existenceCondition": {
                   "field": "name",

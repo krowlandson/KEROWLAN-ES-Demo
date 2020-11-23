@@ -11,8 +11,8 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-DDoSProtection",
         "Properties": {
-          "Description": "This policy deploys an Azure DDoS Protection Standard plan",
-          "DisplayName": "Deploy-DDoSProtection",
+          "Description": "Deploys an Azure DDoS Protection Standard plan",
+          "DisplayName": "Deploy an Azure DDoS Protection Standard plan",
           "Mode": "All",
           "Parameters": {
             "ddosName": {
@@ -36,6 +36,18 @@
                 "displayName": "rgName",
                 "description": "Provide name for resource group."
               }
+            },
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
             }
           },
           "PolicyRule": {
@@ -48,32 +60,18 @@
               ]
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
-                "type": "Microsoft.Resources/resourceGroups",
+                "type": "Microsoft.Network/ddosProtectionPlans",
                 "deploymentScope": "Subscription",
-                "existenceScope": "Subscription",
+                "existenceScope": "ResourceGroup",
+                "resourceGroupName": "[parameters('rgName')]",
+                "name": "[parameters('ddosName')]",
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                  "/providers/Microsoft.Authorization/roleDefinitions/4d97b98b-1d4f-4787-a291-c67834d212e7"
                 ],
-                "existenceCondition": {
-                  "allOf": [
-                    {
-                      "field": "name",
-                      "like": "[parameters('rgName')]"
-                    },
-                    {
-                      "field": "type",
-                      "equals": "Microsoft.Resources/subscriptions/resourceGroups"
-                    },
-                    {
-                      "field": "type",
-                      "equals": "Microsoft.Network/ddosProtectionPlans"
-                    }
-                  ]
-                },
                 "deployment": {
-                  "location": "westeurope",
+                  "location": "northeurope",
                   "properties": {
                     "mode": "incremental",
                     "parameters": {
