@@ -11,8 +11,8 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-Windows-DomainJoin",
         "Properties": {
-          "Description": null,
-          "DisplayName": "Deploy-Windows-DomainJoin",
+          "Description": "Deploy Windows Domain Join Extension with keyvault configuration when the extension does not exist on a given windows Virtual Machine",
+          "DisplayName": "Deploy Windows Domain Join Extension with keyvault configuration",
           "Mode": "All",
           "Parameters": {
             "domainUsername": {
@@ -49,6 +49,18 @@
                 "displayName": "keyVaultResourceId",
                 "description": null
               }
+            },
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
             }
           },
           "PolicyRule": {
@@ -131,11 +143,11 @@
               ]
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
                 "type": "Microsoft.Compute/virtualMachines/extensions",
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                  "/providers/Microsoft.Authorization/roleDefinitions/9980e02c-c2be-4d73-94e8-173b1dc7cf3c"
                 ],
                 "existenceCondition": {
                   "allOf": [

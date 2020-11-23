@@ -11,17 +11,30 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-Sql-Tde",
         "Properties": {
-          "Description": "Configures SQL DataBases",
-          "DisplayName": "Deploy-Sql-Tde",
+          "Description": "Deploy the Transparent Data Encryption when it is not enabled in the deployment",
+          "DisplayName": "Deploy SQL Database Transparent Data Encryption ",
           "Mode": "All",
-          "Parameters": {},
+          "Parameters": {
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
+            }
+          },
           "PolicyRule": {
             "if": {
               "field": "type",
               "equals": "Microsoft.Sql/servers/databases"
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
                 "type": "Microsoft.Sql/servers/databases/transparentDataEncryption",
                 "existenceCondition": {
@@ -76,7 +89,7 @@
                   }
                 },
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                  "/providers/Microsoft.Authorization/roleDefinitions/056cd41c-7e88-42e1-933e-88ba6a50c9c3"
                 ]
               }
             }

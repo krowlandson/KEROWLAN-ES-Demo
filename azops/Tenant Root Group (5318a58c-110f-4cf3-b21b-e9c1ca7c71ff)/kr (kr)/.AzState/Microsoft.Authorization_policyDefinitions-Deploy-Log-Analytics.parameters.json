@@ -11,8 +11,8 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
         "Properties": {
-          "Description": null,
-          "DisplayName": "Deploy-LogAnalytics",
+          "Description": "Deploys Log Analytics and Automation account to the subscription where the policy is assigned.",
+          "DisplayName": "Deploy the Log Analytics in the subscription",
           "Mode": "All",
           "Parameters": {
             "workspaceName": {
@@ -43,12 +43,32 @@
                 "description": "Select Azure region for Automation account"
               }
             },
+            "retentionInDays": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Data retention",
+                "description": "Select data retention (days) for Log Analytics."
+              },
+              "defaultValue": "30"
+            },
             "rgName": {
               "type": "String",
               "metadata": {
                 "displayName": "rgName",
                 "description": "Provide name for resource group."
               }
+            },
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
             }
           },
           "PolicyRule": {
@@ -61,13 +81,14 @@
               ]
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
                 "type": "Microsoft.OperationalInsights/workspaces",
                 "deploymentScope": "Subscription",
                 "existenceScope": "Subscription",
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/b24988ac-6180-42a0-ab88-20f7382dd24c"
+                  "/providers/microsoft.authorization/roleDefinitions/749f88d5-cbae-40b8-bcfc-e573ddc772fa",
+                  "/providers/microsoft.authorization/roleDefinitions/92aaf0da-9dab-42b6-94a3-d43ce8d16293"
                 ],
                 "existenceCondition": {
                   "allOf": [
@@ -78,12 +99,15 @@
                   ]
                 },
                 "deployment": {
-                  "location": "westeurope",
+                  "location": "northeurope",
                   "properties": {
                     "mode": "incremental",
                     "parameters": {
                       "rgName": {
                         "value": "[parameters('rgName')]"
+                      },
+                      "retentionInDays": {
+                        "value": "[parameters('retentionInDays')]"
                       },
                       "workspaceName": {
                         "value": "[parameters('workspaceName')]"
@@ -115,6 +139,9 @@
                           "type": "string"
                         },
                         "automationRegion": {
+                          "type": "string"
+                        },
+                        "retentionInDays": {
                           "type": "string"
                         }
                       },
@@ -164,7 +191,8 @@
                                     "sku": {
                                       "name": "pernode"
                                     },
-                                    "enableLogAccessUsingOnlyResourcePermissions": true
+                                    "enableLogAccessUsingOnlyResourcePermissions": true,
+                                    "retentionInDays": "[int(parameters('retentionInDays'))]"
                                   },
                                   "resources": [
                                     {
