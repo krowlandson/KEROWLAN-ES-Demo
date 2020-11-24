@@ -1,0 +1,35 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "None"
+        },
+        "Location": "eastus",
+        "Name": "ES-Deny-VMIPForwarding",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-VMIPForwarding",
+        "Properties": {
+          "Description": "Deny IP Forwarding on Virtual Machines.",
+          "DisplayName": "ES-Deny-VMIPForwarding",
+          "NotScopes": null,
+          "Parameters": {
+            "effect": {
+              "value": "Disabled"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/bd352bd5-2853-4985-bf0d-73806b4a5744",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/ES-Deny-VMIPForwarding",
+        "ResourceName": "ES-Deny-VMIPForwarding",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

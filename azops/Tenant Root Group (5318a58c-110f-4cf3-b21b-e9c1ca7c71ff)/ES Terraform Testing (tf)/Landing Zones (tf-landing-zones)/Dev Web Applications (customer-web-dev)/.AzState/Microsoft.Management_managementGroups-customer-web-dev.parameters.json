@@ -1,0 +1,62 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/customer-web-dev",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "customer-web-dev",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Dev Web Applications",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
+        "ParentName": "tf-landing-zones",
+        "ParentDisplayName": "Landing Zones",
+        "Children": null,
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [
+            {
+              "Identity": {
+                "type": "None"
+              },
+              "Location": "eastus",
+              "Name": "ES-Allowed-Locations",
+              "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/customer-web-dev/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-Locations",
+              "Properties": {
+                "Description": "Specifies the allowed locations (regions) where resources can be deployed",
+                "DisplayName": "ES-Allowed-Locations",
+                "NotScopes": null,
+                "Parameters": {
+                  "listOfAllowedLocations": {
+                    "value": [
+                      "eastus",
+                      "eastus2",
+                      "northcentralus",
+                      "southcentralus",
+                      "westus"
+                    ]
+                  }
+                },
+                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
+                "Scope": "/providers/Microsoft.Management/managementGroups/customer-web-dev"
+              },
+              "ResourceId": "/providers/Microsoft.Management/managementGroups/customer-web-dev/providers/Microsoft.Authorization/policyAssignments/ES-Allowed-Locations",
+              "ResourceName": "ES-Allowed-Locations",
+              "ResourceType": "Microsoft.Authorization/policyAssignments",
+              "Sku": {
+                "name": "A0",
+                "tier": "Free"
+              }
+            }
+          ],
+          "roleDefinitions": [],
+          "roleAssignments": []
+        }
+      }
+    }
+  }
+}
