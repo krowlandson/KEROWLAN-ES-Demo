@@ -9,19 +9,12 @@
         "Name": "kr-online",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "kr-online",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-12T20:12:45.895607Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
         "ParentId": "/providers/Microsoft.Management/managementGroups/kr-landingzones",
         "ParentName": "kr-landingzones",
         "ParentDisplayName": "kr-landingzones",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

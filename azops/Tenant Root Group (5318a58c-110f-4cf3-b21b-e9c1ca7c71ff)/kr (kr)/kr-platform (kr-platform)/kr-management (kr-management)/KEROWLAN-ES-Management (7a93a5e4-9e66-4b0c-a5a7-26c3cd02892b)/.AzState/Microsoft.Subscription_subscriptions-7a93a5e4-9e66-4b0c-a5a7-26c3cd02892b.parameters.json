@@ -8,36 +8,7 @@
         "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
         "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
         "DisplayName": "KEROWLAN-ES-Management",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [
-            {
-              "Identity": null,
-              "Location": null,
-              "Name": "SecurityCenterBuiltIn",
-              "PolicyAssignmentId": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
-              "Properties": {
-                "Description": "This is the default set of policies monitored by Azure Security Center. It was automatically assigned as part of onboarding to Security Center. The default assignment contains only audit policies. For more information please visit https://aka.ms/ascpolicies",
-                "DisplayName": "ASC Default (subscription: 7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b)",
-                "NotScopes": null,
-                "Parameters": {},
-                "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
-                "Scope": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
-              },
-              "ResourceId": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/providers/Microsoft.Authorization/policyAssignments/SecurityCenterBuiltIn",
-              "ResourceName": "SecurityCenterBuiltIn",
-              "ResourceType": "Microsoft.Authorization/policyAssignments",
-              "Sku": {
-                "name": "A1",
-                "tier": "Standard"
-              }
-            }
-          ],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }

@@ -9,19 +9,12 @@
         "Name": "customer-sap",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "SAP",
-        "UpdatedTime": "0001-01-01T00:00:00Z",
-        "UpdatedBy": null,
+        "UpdatedTime": "2020-11-23T15:02:29.1828256Z",
+        "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
         "ParentName": "tf-landing-zones",
         "ParentDisplayName": "Landing Zones",
-        "Children": null,
-        "properties": {
-          "policyDefinitions": [],
-          "policySetDefinitions": [],
-          "policyAssignments": [],
-          "roleDefinitions": [],
-          "roleAssignments": []
-        }
+        "Children": null
       }
     }
   }
