@@ -1,0 +1,43 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/demo-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "demo-platform",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Platform",
+        "UpdatedTime": "2020-11-24T16:38:39.3669019Z",
+        "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/demo",
+        "ParentName": "demo",
+        "ParentDisplayName": "ESLZ with Demo",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-identity",
+            "Name": "demo-identity",
+            "DisplayName": "Identity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-connectivity",
+            "Name": "demo-connectivity",
+            "DisplayName": "Connectivity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-management",
+            "Name": "demo-management",
+            "DisplayName": "Management",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
