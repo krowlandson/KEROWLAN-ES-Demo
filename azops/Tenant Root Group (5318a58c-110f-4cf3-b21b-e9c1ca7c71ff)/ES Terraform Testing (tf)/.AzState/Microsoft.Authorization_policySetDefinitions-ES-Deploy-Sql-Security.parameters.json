@@ -30,20 +30,17 @@
             {
               "policyDefinitionReferenceId": "ES-Deploy-Sql-Tde",
               "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-Tde",
-              "parameters": {},
-              "groupNames": []
+              "parameters": {}
             },
             {
               "policyDefinitionReferenceId": "ES-Deploy-Sql-SecurityAlertPolicies",
               "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-SecurityAlertPolicies",
-              "parameters": {},
-              "groupNames": []
+              "parameters": {}
             },
             {
               "policyDefinitionReferenceId": "ES-Deploy-Sql-AuditingSettings",
               "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/ES-Deploy-Sql-AuditingSettings",
-              "parameters": {},
-              "groupNames": []
+              "parameters": {}
             },
             {
               "policyDefinitionReferenceId": "ES-Deploy-Sql-VulnerabilityAssessments",
@@ -55,8 +52,7 @@
                 "vulnerabilityAssessmentsStorageID": {
                   "value": "[parameters('vulnerabilityAssessmentsStorageID')]"
                 }
-              },
-              "groupNames": []
+              }
             }
           ]
         },
