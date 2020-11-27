@@ -9,7 +9,7 @@
         "Name": "demo-management",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Management",
-        "UpdatedTime": "2020-11-24T16:39:13.6035266Z",
+        "UpdatedTime": "2020-11-26T20:53:43.2525307Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/demo-platform",
         "ParentName": "demo-platform",

@@ -17,8 +17,11 @@
           "Parameters": {
             "listOfAllowedLocations": {
               "value": [
-                "uksouth",
-                "ukwest"
+                "eastus",
+                "eastus2",
+                "northcentralus",
+                "southcentralus",
+                "westus"
               ]
             }
           },

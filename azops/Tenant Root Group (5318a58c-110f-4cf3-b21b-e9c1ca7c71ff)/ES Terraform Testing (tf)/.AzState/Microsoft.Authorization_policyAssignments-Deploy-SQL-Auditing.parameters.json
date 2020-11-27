@@ -1,0 +1,40 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "f405368e-3a39-403b-94f3-555a1deedb1f",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-SQL-Auditing",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Auditing",
+        "Properties": {
+          "Description": "Deploy Auditing on SQL servers.",
+          "DisplayName": "Deploy-SQL-Auditing",
+          "NotScopes": null,
+          "Parameters": {
+            "retentionDays": {
+              "value": "10"
+            },
+            "storageAccountsResourceGroup": {
+              "value": null
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/f4c68484-132f-41f9-9b6d-3e4b1cb55036",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Auditing",
+        "ResourceName": "Deploy-SQL-Auditing",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

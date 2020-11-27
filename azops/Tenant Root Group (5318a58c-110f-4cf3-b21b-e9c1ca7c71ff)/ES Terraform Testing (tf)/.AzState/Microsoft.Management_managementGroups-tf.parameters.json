@@ -9,19 +9,12 @@
         "Name": "tf",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "ES Terraform Testing",
-        "UpdatedTime": "2020-11-23T15:01:09.9294207Z",
+        "UpdatedTime": "2020-11-26T20:52:35.62382Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentDisplayName": "Tenant Root Group",
         "Children": [
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
-            "Name": "tf-sandboxes",
-            "DisplayName": "Sandboxes",
-            "Children": null
-          },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
@@ -31,16 +24,23 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
-            "Name": "tf-platform",
-            "DisplayName": "Platform",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
+            "Name": "tf-landing-zones",
+            "DisplayName": "Landing Zones",
             "Children": null
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
-            "Name": "tf-landing-zones",
-            "DisplayName": "Landing Zones",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
+            "Name": "tf-sandboxes",
+            "DisplayName": "Sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-platform",
+            "Name": "tf-platform",
+            "DisplayName": "Platform",
             "Children": null
           }
         ]

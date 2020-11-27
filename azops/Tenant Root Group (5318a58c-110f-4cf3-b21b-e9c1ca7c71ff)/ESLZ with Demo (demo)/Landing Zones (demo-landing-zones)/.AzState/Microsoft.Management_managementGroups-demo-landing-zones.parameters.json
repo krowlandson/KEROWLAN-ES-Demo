@@ -9,7 +9,7 @@
         "Name": "demo-landing-zones",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Landing Zones",
-        "UpdatedTime": "2020-11-24T16:38:40.9094438Z",
+        "UpdatedTime": "2020-11-26T20:53:10.3217024Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/demo",
         "ParentName": "demo",
