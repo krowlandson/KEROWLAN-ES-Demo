@@ -9,7 +9,7 @@
         "Name": "kr-management",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "kr-management",
-        "UpdatedTime": "2020-11-12T20:12:46.0460457Z",
+        "UpdatedTime": "2020-12-17T16:35:25.4356127Z",
         "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
         "ParentId": "/providers/Microsoft.Management/managementGroups/kr-platform",
         "ParentName": "kr-platform",
