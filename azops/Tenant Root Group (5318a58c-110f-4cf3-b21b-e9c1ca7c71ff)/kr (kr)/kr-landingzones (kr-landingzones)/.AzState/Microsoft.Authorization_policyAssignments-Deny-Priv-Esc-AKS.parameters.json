@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "0cda88e9-b95f-4d24-a8f7-f5af09a1b202",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "uksouth",
+        "Name": "Deny-Priv-Esc-AKS",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/kr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Esc-AKS",
+        "Properties": {
+          "Description": "Deny-Privileged-Escalations-AKS",
+          "DisplayName": "Deny-Privileged-Escalations-AKS",
+          "NotScopes": null,
+          "Parameters": {
+            "effect": {
+              "value": "deny"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1c6e92c9-99f0-4e55-9cf2-0c234dc48f99",
+          "Scope": "/providers/Microsoft.Management/managementGroups/kr-landingzones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/kr-landingzones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Esc-AKS",
+        "ResourceName": "Deny-Priv-Esc-AKS",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

@@ -9,7 +9,7 @@
         "Name": "kr-platform",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "kr-platform",
-        "UpdatedTime": "2020-11-12T20:12:40.0045728Z",
+        "UpdatedTime": "2020-12-17T16:34:49.1402319Z",
         "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
         "ParentId": "/providers/Microsoft.Management/managementGroups/kr",
         "ParentName": "kr",
@@ -17,23 +17,9 @@
         "Children": [
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/kr-identity",
-            "Name": "kr-identity",
-            "DisplayName": "identity",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/kr-management",
             "Name": "kr-management",
             "DisplayName": "kr-management",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/kr-connectivity",
-            "Name": "kr-connectivity",
-            "DisplayName": "connectivity",
             "Children": null
           }
         ]

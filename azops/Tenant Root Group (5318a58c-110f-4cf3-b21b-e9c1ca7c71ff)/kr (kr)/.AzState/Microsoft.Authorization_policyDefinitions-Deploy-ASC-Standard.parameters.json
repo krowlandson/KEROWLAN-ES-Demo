@@ -11,24 +11,10 @@
         "SubscriptionId": null,
         "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr/providers/Microsoft.Authorization/policyDefinitions/Deploy-ASC-Standard",
         "Properties": {
-          "Description": "Ensures that subscriptions have Security Centre Standard enabled.",
-          "DisplayName": "Deploy-ASC-Standard",
+          "Description": "Deploys  the Azure Defender settings in Azure Security Center for  the specific services.",
+          "DisplayName": "Deploy Azure Defender settings in Azure Security Center.",
           "Mode": "All",
           "Parameters": {
-            "emailSecurityContact": {
-              "type": "String",
-              "metadata": {
-                "displayName": "emailSecurityContact",
-                "description": "email address of the contact, in the form of john@doe.com"
-              }
-            },
-            "phoneSecurityContact": {
-              "type": "String",
-              "metadata": {
-                "displayName": "phoneSecurityContact",
-                "description": "phone number of the Security Contact"
-              }
-            },
             "pricingTierVMs": {
               "type": "String",
               "metadata": {
@@ -112,6 +98,42 @@
                 "Free"
               ],
               "defaultValue": "Standard"
+            },
+            "pricingTierDns": {
+              "type": "String",
+              "metadata": {
+                "displayName": "pricingTierDns",
+                "description": null
+              },
+              "allowedValues": [
+                "Standard",
+                "Free"
+              ],
+              "defaultValue": "Standard"
+            },
+            "pricingTierArm": {
+              "type": "String",
+              "metadata": {
+                "displayName": "pricingTierArm",
+                "description": null
+              },
+              "allowedValues": [
+                "Standard",
+                "Free"
+              ],
+              "defaultValue": "Standard"
+            },
+            "effect": {
+              "type": "String",
+              "metadata": {
+                "displayName": "Effect",
+                "description": "Enable or disable the execution of the policy"
+              },
+              "allowedValues": [
+                "DeployIfNotExists",
+                "Disabled"
+              ],
+              "defaultValue": "DeployIfNotExists"
             }
           },
           "PolicyRule": {
@@ -124,13 +146,13 @@
               ]
             },
             "then": {
-              "effect": "deployIfNotExists",
+              "effect": "[parameters('effect')]",
               "details": {
                 "type": "Microsoft.Security/pricings",
                 "deploymentScope": "subscription",
                 "existenceScope": "subscription",
                 "roleDefinitionIds": [
-                  "/providers/Microsoft.Authorization/roleDefinitions/8e3af657-a8ff-443c-a75c-2fe8c4bcb635"
+                  "/providers/Microsoft.Authorization/roleDefinitions/fb1c8493-542b-48eb-b624-b4c8fea62acd"
                 ],
                 "existenceCondition": {
                   "allOf": [
@@ -149,12 +171,6 @@
                   "properties": {
                     "mode": "incremental",
                     "parameters": {
-                      "emailSecurityContact": {
-                        "value": "[parameters('emailSecurityContact')]"
-                      },
-                      "phoneSecurityContact": {
-                        "value": "[parameters('phoneSecurityContact')]"
-                      },
                       "pricingTierVMs": {
                         "value": "[parameters('pricingTierVMs')]"
                       },
@@ -175,24 +191,18 @@
                       },
                       "pricingTierKubernetesService": {
                         "value": "[parameters('pricingTierKubernetesService')]"
+                      },
+                      "pricingTierDns": {
+                        "value": "[parameters('pricingTierDns')]"
+                      },
+                      "pricingTierArm": {
+                        "value": "[parameters('pricingTierArm')]"
                       }
                     },
                     "template": {
                       "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
                       "contentVersion": "1.0.0.0",
                       "parameters": {
-                        "emailSecurityContact": {
-                          "type": "string",
-                          "metadata": {
-                            "description": "email address of the contact, in the form of john@doe.com"
-                          }
-                        },
-                        "phoneSecurityContact": {
-                          "type": "string",
-                          "metadata": {
-                            "description": "phone number of the Security Contact"
-                          }
-                        },
                         "pricingTierVMs": {
                           "type": "string",
                           "metadata": {
@@ -234,21 +244,22 @@
                           "metadata": {
                             "description": "KubernetesService"
                           }
+                        },
+                        "pricingTierDns": {
+                          "type": "string",
+                          "metadata": {
+                            "description": "KubernetesService"
+                          }
+                        },
+                        "pricingTierArm": {
+                          "type": "string",
+                          "metadata": {
+                            "description": "KubernetesService"
+                          }
                         }
                       },
                       "variables": {},
                       "resources": [
-                        {
-                          "type": "Microsoft.Security/securityContacts",
-                          "name": "default1",
-                          "apiVersion": "2017-08-01-preview",
-                          "properties": {
-                            "email": "[parameters('emailSecurityContact')]",
-                            "phone": "[parameters('phoneSecurityContact')]",
-                            "alertNotifications": "On",
-                            "alertsToAdmins": "On"
-                          }
-                        },
                         {
                           "type": "Microsoft.Security/pricings",
                           "apiVersion": "2018-06-01",
@@ -321,6 +332,28 @@
                           ],
                           "properties": {
                             "pricingTier": "[parameters('pricingTierContainerRegistry')]"
+                          }
+                        },
+                        {
+                          "type": "Microsoft.Security/pricings",
+                          "apiVersion": "2018-06-01",
+                          "name": "Dns",
+                          "dependsOn": [
+                            "[concat('Microsoft.Security/pricings/ContainerRegistry')]"
+                          ],
+                          "properties": {
+                            "pricingTier": "[parameters('pricingTierDns')]"
+                          }
+                        },
+                        {
+                          "type": "Microsoft.Security/pricings",
+                          "apiVersion": "2018-06-01",
+                          "name": "Arm",
+                          "dependsOn": [
+                            "[concat('Microsoft.Security/pricings/Dns')]"
+                          ],
+                          "properties": {
+                            "pricingTier": "[parameters('pricingTierArm')]"
                           }
                         }
                       ],
