@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "62169514-e271-45eb-b8d2-6aeebaca70ce",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "uksouth",
+        "Name": "Deploy-VMSS-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es-wingtip/providers/Microsoft.Authorization/policyAssignments/Deploy-VMSS-Monitoring",
+        "Properties": {
+          "Description": "Deploy-VMSS-Monitoring",
+          "DisplayName": "Deploy-VMSS-Monitoring",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics_1": {
+              "value": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/resourcegroups/es-wingtip-mgmt/providers/microsoft.operationalinsights/workspaces/es-wingtip-la-7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/75714362-cae7-409e-9b99-a8e5075b7fad",
+          "Scope": "/providers/Microsoft.Management/managementGroups/es-wingtip"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/es-wingtip/providers/Microsoft.Authorization/policyAssignments/Deploy-VMSS-Monitoring",
+        "ResourceName": "Deploy-VMSS-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

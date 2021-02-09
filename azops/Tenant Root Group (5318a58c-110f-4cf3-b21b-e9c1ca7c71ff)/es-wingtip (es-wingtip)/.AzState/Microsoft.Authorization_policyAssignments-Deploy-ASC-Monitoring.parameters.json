@@ -1,0 +1,33 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "33360551-e016-4aaa-977d-c547f4dda147",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "uksouth",
+        "Name": "Deploy-ASC-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/es-wingtip/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Monitoring",
+        "Properties": {
+          "Description": "ASC-Monitoring",
+          "DisplayName": "ASC-Monitoring",
+          "NotScopes": null,
+          "Parameters": null,
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/1f3afdf9-d0c9-4c3d-847f-89da613e70a8",
+          "Scope": "/providers/Microsoft.Management/managementGroups/es-wingtip"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/es-wingtip/providers/Microsoft.Authorization/policyAssignments/Deploy-ASC-Monitoring",
+        "ResourceName": "Deploy-ASC-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
