@@ -4,16 +4,16 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/kr-management",
+        "Id": "/providers/Microsoft.Management/managementGroups/es-wingtip-sandboxes",
         "Type": "/providers/Microsoft.Management/managementGroups",
-        "Name": "kr-management",
+        "Name": "es-wingtip-sandboxes",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
-        "DisplayName": "kr-management",
-        "UpdatedTime": "2020-12-17T16:35:25.4356127Z",
+        "DisplayName": "es-wingtip-sandboxes",
+        "UpdatedTime": "2021-02-08T15:07:17.0982476Z",
         "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
-        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-platform",
-        "ParentName": "kr-platform",
-        "ParentDisplayName": "kr-platform",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/es-wingtip",
+        "ParentName": "es-wingtip",
+        "ParentDisplayName": "es-wingtip",
         "Children": null
       }
     }
