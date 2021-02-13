@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "demo-demo-corp",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Corp",
+        "UpdatedTime": "2021-02-12T08:56:27.8755523Z",
+        "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones",
+        "ParentName": "demo-landing-zones",
+        "ParentDisplayName": "Landing Zones",
+        "Children": null
+      }
+    }
+  }
+}
