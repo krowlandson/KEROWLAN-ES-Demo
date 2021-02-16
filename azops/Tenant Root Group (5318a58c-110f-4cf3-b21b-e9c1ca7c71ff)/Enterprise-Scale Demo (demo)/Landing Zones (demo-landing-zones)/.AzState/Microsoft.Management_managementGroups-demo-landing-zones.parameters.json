@@ -9,12 +9,19 @@
         "Name": "demo-landing-zones",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Landing Zones",
-        "UpdatedTime": "2021-02-12T08:55:58.6677487Z",
+        "UpdatedTime": "2021-02-15T10:15:47.4904129Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/demo",
         "ParentName": "demo",
         "ParentDisplayName": "Enterprise-Scale Demo",
         "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-sap",
+            "Name": "demo-demo-sap",
+            "DisplayName": "SAP",
+            "Children": null
+          },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-corp",
@@ -27,13 +34,6 @@
             "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-online",
             "Name": "demo-demo-online",
             "DisplayName": "Online",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo-demo-sap",
-            "Name": "demo-demo-sap",
-            "DisplayName": "SAP",
             "Children": null
           }
         ]
