@@ -5,7 +5,7 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "748d7f08-d01d-463a-9fde-31268de6a157",
+          "principalId": "ca3cccbd-d662-42ef-8cfd-b9399535b8f9",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },

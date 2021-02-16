@@ -9,7 +9,7 @@
         "Name": "tf",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Enterprise-Scale Custom",
-        "UpdatedTime": "2021-02-12T08:55:22.1001468Z",
+        "UpdatedTime": "2021-02-15T10:15:14.3351021Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
@@ -24,13 +24,6 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
-            "Name": "tf-decommissioned",
-            "DisplayName": "Decommissioned",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/tf-landing-zones",
             "Name": "tf-landing-zones",
             "DisplayName": "Landing Zones",
@@ -41,6 +34,13 @@
             "Id": "/providers/Microsoft.Management/managementGroups/tf-sandboxes",
             "Name": "tf-sandboxes",
             "DisplayName": "Sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf-decommissioned",
+            "Name": "tf-decommissioned",
+            "DisplayName": "Decommissioned",
             "Children": null
           }
         ]
