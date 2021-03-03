@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/eswt-decommissioned",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "eswt-decommissioned",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "eswt-decommissioned",
+        "UpdatedTime": "2021-03-02T20:50:07.1245656Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/eswt",
+        "ParentName": "eswt",
+        "ParentDisplayName": "eswt",
+        "Children": null
+      }
+    }
+  }
+}

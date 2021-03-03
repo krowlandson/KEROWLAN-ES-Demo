@@ -14,15 +14,7 @@
         "ParentId": "/providers/Microsoft.Management/managementGroups/es-wingtip-platform",
         "ParentName": "es-wingtip-platform",
         "ParentDisplayName": "es-wingtip-platform",
-        "Children": [
-          {
-            "Type": "/subscriptions",
-            "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
-            "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
-            "DisplayName": "KEROWLAN-ES-Management",
-            "Children": null
-          }
-        ]
+        "Children": null
       }
     }
   }
