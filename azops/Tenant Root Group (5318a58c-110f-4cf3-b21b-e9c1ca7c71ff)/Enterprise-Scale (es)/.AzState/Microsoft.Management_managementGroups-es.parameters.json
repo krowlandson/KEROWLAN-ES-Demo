@@ -9,12 +9,19 @@
         "Name": "es",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Enterprise-Scale",
-        "UpdatedTime": "2021-02-15T10:15:14.4126975Z",
+        "UpdatedTime": "2021-03-04T21:11:26.0648004Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentDisplayName": "Tenant Root Group",
         "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/es-decommissioned",
+            "Name": "es-decommissioned",
+            "DisplayName": "Decommissioned",
+            "Children": null
+          },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/es-platform",
@@ -34,13 +41,6 @@
             "Id": "/providers/Microsoft.Management/managementGroups/es-sandboxes",
             "Name": "es-sandboxes",
             "DisplayName": "Sandboxes",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/es-decommissioned",
-            "Name": "es-decommissioned",
-            "DisplayName": "Decommissioned",
             "Children": null
           }
         ]

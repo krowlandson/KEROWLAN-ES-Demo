@@ -5,7 +5,7 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "931942a9-df04-40ea-84e8-0c0e587f7419",
+          "principalId": "e732b8de-72ad-4c27-a8a6-39ceae7e9dba",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
@@ -14,7 +14,7 @@
         "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Auditing",
         "Properties": {
           "Description": "Deploy Auditing on SQL servers.",
-          "DisplayName": "Deploy-SQL-Auditing",
+          "DisplayName": "Deploy Auditing on SQL servers",
           "NotScopes": null,
           "Parameters": {
             "retentionDays": {
