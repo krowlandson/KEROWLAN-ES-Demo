@@ -5,7 +5,7 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "b7c662a1-fad0-42d8-9823-d45432d0c0ec",
+          "principalId": "fec07557-50fc-486f-8490-19867e23d183",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
@@ -14,7 +14,7 @@
         "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-HITRUST-HIPAA",
         "Properties": {
           "Description": "This assignment includes audit and virtual machine extension deployment policies that address a subset of HITRUST/HIPAA controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/hipaa-blueprint.",
-          "DisplayName": "Deploy-HITRUST-HIPAA",
+          "DisplayName": "Assign policies for HITRUST and HIPAA controls",
           "NotScopes": null,
           "Parameters": {
             "CertificateThumbprints": {

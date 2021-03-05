@@ -1,0 +1,35 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "None"
+        },
+        "Location": "eastus",
+        "Name": "Deny-http-Ingress-AKS",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-http-Ingress-AKS",
+        "Properties": {
+          "Description": "Enforce-Https-Ingress-AKS.",
+          "DisplayName": "Enforce-Https-Ingress-AKS",
+          "NotScopes": null,
+          "Parameters": {
+            "effect": {
+              "value": "deny"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1a5b4dca-0b6f-4cf5-907c-56316bc1bf3d",
+          "Scope": "/providers/Microsoft.Management/managementGroups/demo-landing-zones"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-http-Ingress-AKS",
+        "ResourceName": "Deny-http-Ingress-AKS",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

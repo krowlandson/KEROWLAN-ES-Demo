@@ -31,16 +31,9 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo",
-            "Name": "demo",
-            "DisplayName": "Enterprise-Scale Demo",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/tf",
-            "Name": "tf",
-            "DisplayName": "Enterprise-Scale Custom",
+            "Id": "/providers/Microsoft.Management/managementGroups/eswt",
+            "Name": "eswt",
+            "DisplayName": "eswt",
             "Children": null
           },
           {
@@ -52,9 +45,16 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/eswt",
-            "Name": "eswt",
-            "DisplayName": "eswt",
+            "Id": "/providers/Microsoft.Management/managementGroups/tf",
+            "Name": "tf",
+            "DisplayName": "Enterprise-Scale Custom",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo",
+            "Name": "demo",
+            "DisplayName": "Enterprise-Scale Demo",
             "Children": null
           }
         ]
