@@ -9,7 +9,7 @@
         "Name": "demo-decommissioned",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Decommissioned",
-        "UpdatedTime": "2021-03-04T21:12:00.572518Z",
+        "UpdatedTime": "2021-03-05T20:09:22.0780042Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/demo",
         "ParentName": "demo",

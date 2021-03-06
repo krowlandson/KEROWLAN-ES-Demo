@@ -9,16 +9,16 @@
         },
         "Location": "eastus",
         "Name": "Deny-IP-Forwarding",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-Forwarding",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-Forwarding",
         "Properties": {
           "Description": "Network interfaces should disable IP forwarding.",
           "DisplayName": "Deny-IP-Forwarding",
           "NotScopes": null,
           "Parameters": null,
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/88c0b9da-ce96-4b03-9635-f29a937e2900",
-          "Scope": "/providers/Microsoft.Management/managementGroups/demo-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-Forwarding",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-IP-Forwarding",
         "ResourceName": "Deny-IP-Forwarding",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
