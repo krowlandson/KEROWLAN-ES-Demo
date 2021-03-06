@@ -9,16 +9,16 @@
         },
         "Location": "eastus",
         "Name": "Deny-RDP-From-Internet",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-RDP-From-Internet",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-RDP-From-Internet",
         "Properties": {
           "Description": "Deny RDP access from the Internet.",
           "DisplayName": "Deny-RDP-From-Internet",
           "NotScopes": null,
           "Parameters": null,
-          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyDefinitions/Deny-RDP-From-Internet",
-          "Scope": "/providers/Microsoft.Management/managementGroups/demo-landing-zones"
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/Deny-RDP-From-Internet",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-RDP-From-Internet",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-RDP-From-Internet",
         "ResourceName": "Deny-RDP-From-Internet",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

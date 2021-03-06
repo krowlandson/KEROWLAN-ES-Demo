@@ -5,22 +5,22 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "2e132aaa-1d41-4725-8a6c-be6bfe6ceb7c",
+          "principalId": "34255246-dafa-482a-925c-41f8b79a1a59",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
         "Location": "eastus",
         "Name": "Deploy-SQL-DB-Auditing",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
         "Properties": {
           "Description": "Deploy-SQL-Audit.",
           "DisplayName": "Deploy-SQL-Audit",
           "NotScopes": null,
           "Parameters": null,
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a6fb4358-5bf4-4ad7-ba82-2cd2f41ce5e9",
-          "Scope": "/providers/Microsoft.Management/managementGroups/demo-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-DB-Auditing",
         "ResourceName": "Deploy-SQL-DB-Auditing",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

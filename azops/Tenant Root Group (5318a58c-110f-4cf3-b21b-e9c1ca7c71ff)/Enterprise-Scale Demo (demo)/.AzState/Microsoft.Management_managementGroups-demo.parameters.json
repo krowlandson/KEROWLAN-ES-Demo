@@ -9,12 +9,19 @@
         "Name": "demo",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "DisplayName": "Enterprise-Scale Demo",
-        "UpdatedTime": "2021-03-04T21:11:27.1082831Z",
+        "UpdatedTime": "2021-03-05T20:08:43.0421556Z",
         "UpdatedBy": "78665f88-b16d-473b-a073-9aaa5b6f6af3",
         "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
         "ParentDisplayName": "Tenant Root Group",
         "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/demo-platform",
+            "Name": "demo-platform",
+            "DisplayName": "Platform",
+            "Children": null
+          },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/demo-landing-zones",
@@ -34,13 +41,6 @@
             "Id": "/providers/Microsoft.Management/managementGroups/demo-decommissioned",
             "Name": "demo-decommissioned",
             "DisplayName": "Decommissioned",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/demo-platform",
-            "Name": "demo-platform",
-            "DisplayName": "Platform",
             "Children": null
           }
         ]
