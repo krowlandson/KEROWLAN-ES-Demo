@@ -8,8 +8,8 @@
           "type": "None"
         },
         "Location": "eastus",
-        "Name": "Allow-RSG-Locations",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Allow-RSG-Locations",
+        "Name": "Deny-RSG-Locations",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deny-RSG-Locations",
         "Properties": {
           "Description": "Specifies the allowed locations (regions) where Resource Groups can be deployed.",
           "DisplayName": "Limit allowed locations for Resource Groups",
@@ -30,8 +30,8 @@
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e765b5de-1225-4ba3-bd56-1ac6695af988",
           "Scope": "/providers/Microsoft.Management/managementGroups/tf"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Allow-RSG-Locations",
-        "ResourceName": "Allow-RSG-Locations",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deny-RSG-Locations",
+        "ResourceName": "Deny-RSG-Locations",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
           "name": "A0",
