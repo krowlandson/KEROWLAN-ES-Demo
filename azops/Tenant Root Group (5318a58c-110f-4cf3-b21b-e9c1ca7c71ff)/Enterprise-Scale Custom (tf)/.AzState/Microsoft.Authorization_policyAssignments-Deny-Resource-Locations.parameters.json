@@ -8,8 +8,8 @@
           "type": "None"
         },
         "Location": "eastus",
-        "Name": "Allow-Resource-Locations",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Allow-Resource-Locations",
+        "Name": "Deny-Resource-Locations",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deny-Resource-Locations",
         "Properties": {
           "Description": "Specifies the allowed locations (regions) where Resources can be deployed.",
           "DisplayName": "Limit allowed locations for Resources",
@@ -30,8 +30,8 @@
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/e56962a6-4747-49cd-b67b-bf8b01975c4c",
           "Scope": "/providers/Microsoft.Management/managementGroups/tf"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Allow-Resource-Locations",
-        "ResourceName": "Allow-Resource-Locations",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deny-Resource-Locations",
+        "ResourceName": "Deny-Resource-Locations",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
           "name": "A0",
