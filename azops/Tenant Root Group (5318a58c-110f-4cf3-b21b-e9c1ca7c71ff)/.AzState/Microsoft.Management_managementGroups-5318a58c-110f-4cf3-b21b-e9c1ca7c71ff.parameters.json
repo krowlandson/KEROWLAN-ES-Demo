@@ -31,13 +31,6 @@
           },
           {
             "Type": "/providers/Microsoft.Management/managementGroups",
-            "Id": "/providers/Microsoft.Management/managementGroups/eswt",
-            "Name": "eswt",
-            "DisplayName": "eswt",
-            "Children": null
-          },
-          {
-            "Type": "/providers/Microsoft.Management/managementGroups",
             "Id": "/providers/Microsoft.Management/managementGroups/es",
             "Name": "es",
             "DisplayName": "Enterprise-Scale",
@@ -55,6 +48,13 @@
             "Id": "/providers/Microsoft.Management/managementGroups/tf",
             "Name": "tf",
             "DisplayName": "Enterprise-Scale Custom",
+            "Children": null
+          },
+          {
+            "Type": "/subscriptions",
+            "Id": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "Name": "7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b",
+            "DisplayName": "KEROWLAN-ES-Management",
             "Children": null
           }
         ]
