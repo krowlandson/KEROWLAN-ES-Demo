@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/bpw-online-example-2",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "bpw-online-example-2",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "BPW Online Example 2",
+        "UpdatedTime": "2021-03-17T10:47:23.8986369Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones",
+        "ParentName": "bpw-landing-zones",
+        "ParentDisplayName": "Landing Zones",
+        "Children": null
+      }
+    }
+  }
+}

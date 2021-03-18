@@ -1,0 +1,43 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/bpw-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "bpw-platform",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "Platform",
+        "UpdatedTime": "2021-03-17T10:10:15.8964339Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/bpw",
+        "ParentName": "bpw",
+        "ParentDisplayName": "BPW Demo",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/bpw-identity",
+            "Name": "bpw-identity",
+            "DisplayName": "Identity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/bpw-connectivity",
+            "Name": "bpw-connectivity",
+            "DisplayName": "Connectivity",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/bpw-management",
+            "Name": "bpw-management",
+            "DisplayName": "Management",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
