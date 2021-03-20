@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "10d7c489-bbfd-4f02-976d-94830f9a8e37",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "westeurope",
+        "Name": "Deploy-VM-Monitoring",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/kr-bugbash/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+        "Properties": {
+          "Description": "Deploy-VM-Monitoring",
+          "DisplayName": "Deploy-VM-Monitoring",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics_1": {
+              "value": "/subscriptions/7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b/resourcegroups/kr-bugbash-mgmt/providers/microsoft.operationalinsights/workspaces/kr-bugbash-la-7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/55f3eceb-5573-4f18-9695-226972c6d74a",
+          "Scope": "/providers/Microsoft.Management/managementGroups/kr-bugbash"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/kr-bugbash/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Monitoring",
+        "ResourceName": "Deploy-VM-Monitoring",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

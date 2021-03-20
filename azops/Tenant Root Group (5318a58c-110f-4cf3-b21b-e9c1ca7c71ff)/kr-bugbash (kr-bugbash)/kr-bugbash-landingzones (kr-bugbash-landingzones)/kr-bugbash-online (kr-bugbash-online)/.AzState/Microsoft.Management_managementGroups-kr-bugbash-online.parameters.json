@@ -1,0 +1,21 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-online",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "kr-bugbash-online",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "kr-bugbash-online",
+        "UpdatedTime": "2021-03-19T15:24:52.814947Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-bugbash-landingzones",
+        "ParentName": "kr-bugbash-landingzones",
+        "ParentDisplayName": "kr-bugbash-landingzones",
+        "Children": null
+      }
+    }
+  }
+}

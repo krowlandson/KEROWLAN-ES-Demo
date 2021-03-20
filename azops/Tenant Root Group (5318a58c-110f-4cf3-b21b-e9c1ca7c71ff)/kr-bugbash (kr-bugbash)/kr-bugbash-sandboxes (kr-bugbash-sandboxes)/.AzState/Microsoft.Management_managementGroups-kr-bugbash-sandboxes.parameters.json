@@ -4,16 +4,16 @@
   "parameters": {
     "input": {
       "value": {
-        "Id": "/providers/Microsoft.Management/managementGroups/bpw-online-example-1",
+        "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-sandboxes",
         "Type": "/providers/Microsoft.Management/managementGroups",
-        "Name": "bpw-online-example-1",
+        "Name": "kr-bugbash-sandboxes",
         "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
-        "DisplayName": "BPW Online Example 1",
-        "UpdatedTime": "2021-03-17T10:45:02.2923115Z",
+        "DisplayName": "kr-bugbash-sandboxes",
+        "UpdatedTime": "2021-03-19T15:24:20.0414534Z",
         "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
-        "ParentId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones",
-        "ParentName": "bpw-landing-zones",
-        "ParentDisplayName": "Landing Zones",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-bugbash",
+        "ParentName": "kr-bugbash",
+        "ParentDisplayName": "kr-bugbash",
         "Children": null
       }
     }

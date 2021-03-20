@@ -1,0 +1,50 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "kr-bugbash",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "kr-bugbash",
+        "UpdatedTime": "2021-03-19T15:23:48.5001681Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-sandboxes",
+            "Name": "kr-bugbash-sandboxes",
+            "DisplayName": "kr-bugbash-sandboxes",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-decommissioned",
+            "Name": "kr-bugbash-decommissioned",
+            "DisplayName": "kr-bugbash-decommissioned",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-landingzones",
+            "Name": "kr-bugbash-landingzones",
+            "DisplayName": "kr-bugbash-landingzones",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-platform",
+            "Name": "kr-bugbash-platform",
+            "DisplayName": "kr-bugbash-platform",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}
