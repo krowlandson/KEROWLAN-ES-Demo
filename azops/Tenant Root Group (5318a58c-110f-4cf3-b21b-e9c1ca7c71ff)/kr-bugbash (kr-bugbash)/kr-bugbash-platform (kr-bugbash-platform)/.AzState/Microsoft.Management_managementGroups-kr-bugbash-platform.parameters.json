@@ -1,0 +1,29 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-platform",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "kr-bugbash-platform",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "kr-bugbash-platform",
+        "UpdatedTime": "2021-03-19T15:24:23.2838448Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/kr-bugbash",
+        "ParentName": "kr-bugbash",
+        "ParentDisplayName": "kr-bugbash",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/kr-bugbash-management",
+            "Name": "kr-bugbash-management",
+            "DisplayName": "kr-bugbash-management",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

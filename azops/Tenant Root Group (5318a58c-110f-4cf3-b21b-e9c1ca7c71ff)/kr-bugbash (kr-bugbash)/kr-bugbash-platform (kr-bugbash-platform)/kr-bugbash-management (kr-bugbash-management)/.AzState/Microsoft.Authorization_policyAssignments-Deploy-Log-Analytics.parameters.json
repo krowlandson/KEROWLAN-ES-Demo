@@ -1,0 +1,52 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "9186b074-9678-4075-a5ca-fc1a38f3be11",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "westeurope",
+        "Name": "Deploy-Log-Analytics",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/kr-bugbash-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Description": "Deploy-Log-Analytics",
+          "DisplayName": "Deploy-Log-Analytics",
+          "NotScopes": null,
+          "Parameters": {
+            "automationAccountName": {
+              "value": "kr-bugbash-a-7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
+            },
+            "automationRegion": {
+              "value": "westeurope"
+            },
+            "retentionInDays": {
+              "value": "30"
+            },
+            "rgName": {
+              "value": "kr-bugbash-mgmt"
+            },
+            "workspaceName": {
+              "value": "kr-bugbash-la-7a93a5e4-9e66-4b0c-a5a7-26c3cd02892b"
+            },
+            "workspaceRegion": {
+              "value": "westeurope"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/kr-bugbash/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Scope": "/providers/Microsoft.Management/managementGroups/kr-bugbash-management"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/kr-bugbash-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
