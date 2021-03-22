@@ -9,7 +9,7 @@
         },
         "Location": "eastus",
         "Name": "Deny-Priv-Containers-AKS",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Containers-AKS",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Containers-AKS",
         "Properties": {
           "Description": "Deny-Privileged-Containers-AKS.",
           "DisplayName": "Deny-Privileged-Containers-AKS",
@@ -20,9 +20,9 @@
             }
           },
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/95edb821-ddaf-4404-9732-666045e056b4",
-          "Scope": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Containers-AKS",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Containers-AKS",
         "ResourceName": "Deny-Priv-Containers-AKS",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

@@ -5,22 +5,22 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "8d5614b8-05d8-46c9-96c9-d941d811fb82",
+          "principalId": "be7267a1-63fe-4154-ae2c-e5070d7b50e2",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
         "Location": "eastus",
         "Name": "Deploy-SQL-Security",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Security",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Security",
         "Properties": {
           "Description": "Deploy-SQL-Security.",
           "DisplayName": "Deploy-SQL-Security",
           "NotScopes": null,
           "Parameters": null,
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/86a912f6-9a06-4e26-b447-11b16ba8659f",
-          "Scope": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Security",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-SQL-Security",
         "ResourceName": "Deploy-SQL-Security",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
