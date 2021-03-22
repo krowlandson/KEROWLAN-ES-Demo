@@ -5,22 +5,22 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "a5a55ebb-de1b-43ec-b339-e9624ece5f89",
+          "principalId": "cf729c4e-ff90-4d74-be9b-24048b4df26f",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
         "Location": "eastus",
         "Name": "Deploy-VM-Backup",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
         "Properties": {
           "Description": "Ensures that Azure Backup is configured for Virtual Machines.",
           "DisplayName": "Deploy-VM-Backup",
           "NotScopes": null,
           "Parameters": null,
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/98d0b9f8-fd90-49c9-88e2-d3baf3b0dd86",
-          "Scope": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/bpw-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-VM-Backup",
         "ResourceName": "Deploy-VM-Backup",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

@@ -1,0 +1,46 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "047259cd-a786-455a-b233-156197fba44e",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-HITRUST-HIPAA",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-HITRUST-HIPAA",
+        "Properties": {
+          "Description": "This assignment includes audit and virtual machine extension deployment policies that address a subset of HITRUST/HIPAA controls. Additional policies will be added in upcoming releases. For more information, visit https://aka.ms/hipaa-blueprint.",
+          "DisplayName": "Assign policies for HITRUST and HIPAA controls",
+          "NotScopes": null,
+          "Parameters": {
+            "CertificateThumbprints": {
+              "value": null
+            },
+            "DeployDiagnosticSettingsforNetworkSecurityGroupsrgName": {
+              "value": "true"
+            },
+            "DeployDiagnosticSettingsforNetworkSecurityGroupsstoragePrefix": {
+              "value": "tf"
+            },
+            "installedApplicationsOnWindowsVM": {
+              "value": null
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Authorization/policySetDefinitions/a169a624-5599-4385-a696-c8d643089fab",
+          "Scope": "/providers/Microsoft.Management/managementGroups/tf"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyAssignments/Deploy-HITRUST-HIPAA",
+        "ResourceName": "Deploy-HITRUST-HIPAA",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}

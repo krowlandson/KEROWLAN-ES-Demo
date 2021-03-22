@@ -1,0 +1,37 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "principalId": "74cb669d-5805-41d3-bba3-4fb5a9ef5e59",
+          "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+          "type": "SystemAssigned"
+        },
+        "Location": "eastus",
+        "Name": "Deploy-AzActivity-Log",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "Properties": {
+          "Description": "Ensures that Activity Log Diagnostics settings are set to push logs into Log Analytics workspace.",
+          "DisplayName": "Deploy Diagnostic Settings for Activity Log to Log Analytics workspace",
+          "NotScopes": null,
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/demo-mgmt/providers/Microsoft.OperationalInsights/workspaces/demo-la-00000000-0000-0000-0000-000000000000"
+            }
+          },
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+          "Scope": "/providers/Microsoft.Management/managementGroups/demo"
+        },
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/demo/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "ResourceName": "Deploy-AzActivity-Log",
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        }
+      }
+    }
+  }
+}
