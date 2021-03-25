@@ -1,0 +1,50 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/j0hn-demo",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "j0hn-demo",
+        "TenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "DisplayName": "J0hn Demo",
+        "UpdatedTime": "2021-03-24T10:02:54.7890138Z",
+        "UpdatedBy": "daa804f2-68e3-4826-8914-ca62f6eff0ce",
+        "ParentId": "/providers/Microsoft.Management/managementGroups/5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "ParentName": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
+        "ParentDisplayName": "Tenant Root Group",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones",
+            "Name": "j0hn-demo-landing-zones",
+            "DisplayName": "Landing Zones",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/j0hn-demo-decommissioned",
+            "Name": "j0hn-demo-decommissioned",
+            "DisplayName": "Decommissioned",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/j0hn-demo-platform",
+            "Name": "j0hn-demo-platform",
+            "DisplayName": "Platform",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/j0hn-demo-sandboxes",
+            "Name": "j0hn-demo-sandboxes",
+            "DisplayName": "Sandboxes",
+            "Children": null
+          }
+        ]
+      }
+    }
+  }
+}

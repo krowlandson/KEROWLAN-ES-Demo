@@ -9,16 +9,16 @@
         },
         "Location": "eastus",
         "Name": "Deny-Subnet-Without-Nsg",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
         "Properties": {
           "Description": "Deny provisioning of subnet without NSG attached.",
           "DisplayName": "Deny-Subnet-Without-Nsg",
           "NotScopes": null,
           "Parameters": null,
-          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/tf/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
-          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/j0hn-demo/providers/Microsoft.Authorization/policyDefinitions/Deny-Subnet-Without-Nsg",
+          "Scope": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Subnet-Without-Nsg",
         "ResourceName": "Deny-Subnet-Without-Nsg",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

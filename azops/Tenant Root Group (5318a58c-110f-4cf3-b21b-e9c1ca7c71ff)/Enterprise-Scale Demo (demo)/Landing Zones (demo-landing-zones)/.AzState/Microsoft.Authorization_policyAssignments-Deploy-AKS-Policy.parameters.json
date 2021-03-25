@@ -5,22 +5,22 @@
     "input": {
       "value": {
         "Identity": {
-          "principalId": "f3093817-1ead-4a0d-8c57-0b81ff387287",
+          "principalId": "48bb3cc6-e6f4-48cf-8ec7-5de7908c4df1",
           "tenantId": "5318a58c-110f-4cf3-b21b-e9c1ca7c71ff",
           "type": "SystemAssigned"
         },
         "Location": "eastus",
         "Name": "Deploy-AKS-Policy",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
         "Properties": {
           "Description": "Deploy-AKS-Policy.",
           "DisplayName": "Deploy-AKS-Policy",
           "NotScopes": null,
           "Parameters": null,
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/a8eff44f-8c92-45c3-a3fb-9880802d67a7",
-          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deploy-AKS-Policy",
         "ResourceName": "Deploy-AKS-Policy",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {

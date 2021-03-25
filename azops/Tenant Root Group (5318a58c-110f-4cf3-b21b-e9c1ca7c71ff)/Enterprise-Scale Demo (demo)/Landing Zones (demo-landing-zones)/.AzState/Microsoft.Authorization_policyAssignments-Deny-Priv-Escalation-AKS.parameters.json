@@ -9,7 +9,7 @@
         },
         "Location": "eastus",
         "Name": "Deny-Priv-Escalation-AKS",
-        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Escalation-AKS",
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Escalation-AKS",
         "Properties": {
           "Description": "Deny-Privileged-Escalations-AKS.",
           "DisplayName": "Deny-Privileged-Escalations-AKS",
@@ -20,9 +20,9 @@
             }
           },
           "PolicyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/1c6e92c9-99f0-4e55-9cf2-0c234dc48f99",
-          "Scope": "/providers/Microsoft.Management/managementGroups/tf-landing-zones"
+          "Scope": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones"
         },
-        "ResourceId": "/providers/Microsoft.Management/managementGroups/tf-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Escalation-AKS",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/j0hn-demo-landing-zones/providers/Microsoft.Authorization/policyAssignments/Deny-Priv-Escalation-AKS",
         "ResourceName": "Deny-Priv-Escalation-AKS",
         "ResourceType": "Microsoft.Authorization/policyAssignments",
         "Sku": {
